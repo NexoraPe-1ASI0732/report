@@ -92,23 +92,26 @@ COURSE PROJECT
 
 **TB2:**
 
-Reporte
+* Reporte
 ![imgs/ReportInsightsTB2.png](imgs/ReportInsightsTB2.png)
 
-Frontend
+* Frontend
 ![imgs/FrontInsightsTB2.png](imgs/FrontInsightsTB2.png)
 
 
 **TF:**
 
-Reporte
-![imgs/......png](imgs/......png)
+* Reporte
 
-Frontend
-![imgs/......png](imgs/......png)
+![imgs/ReportInsights-SP4.png](imgs/ReportInsights-SP4.png)
 
-Backend
-![imgs/......png](imgs/......png)
+* Frontend
+
+![imgs/FrontInsights-SP4.png](imgs/FrontInsights-SP4.png)
+
+* Backend
+
+![imgs/BackInsights-SP4.png](imgs/BackInsights-SP4.png)
 
 ---
 
@@ -259,8 +262,6 @@ del ABET – EAC - Student Outcome 3.
 
 | Criterio específico | Acciones realizadas | Conclusiones |
 |---------------------|---------------------|--------------|
-| **Comunica oralmente con efectividad a diferentes rangos de audiencia** | **Cacho Seminario, Diego Alonso**<br>_**TB1**_<br>Realicé las correcciones necesarias dadas por mis compañeros respecto a los puntos con los que aporté para la TB1, además de subir correctamente mis aportes al repositorio en línea, respetando el formato requerido. <br>_**TP**_<br>Realicé las correcciones necesarias de la entrega anterior (TB1) teniendo en cuenta el cambio en las secciones de los User Stories y Sprint 1, además para la entrega del TP aporté al punto general del Sprint 2 y también desarrollé el endpoint de "profile" de la aplicación web.<br>_**TB2**_<br>En esta entrega, realice mis entrevistas de validación para conocer mas a fondo respecto a nuestro producto y que errores se encontraban presentes, además realice las Evaluaciones según heurísticas con el objetivo de verificar ciertas secciones del proyecto y entender que podría ser un poblema a nuestros posibles usuarios.<br>_**TF**_<br> Finalmente para la entrega del TF, realice las correcciones indicadas del TB2, participe en la realización del Sprint 4 y desarrollo de calidad de código dentro del backend, además de aportar con la creación y organización de los documentos de envío. <br><br>**Vidal Castro, Miguel Angel**<br>_**TB1**_<br>Investigué y obtuve información mediante las entrevistas para tener claro las funcionalidades que debería tener la aplicación y pueda cubrir las necesidades de los usuarios.<br>_**TP**_<br>Participé en la estructuración del front-end del MVP basado en el diseño en Figma, colaborando en la integración de las vistas con el backend. Además, documenté mi trabajo mediante commits y siguiendo la metodología GitFlow para mantener la trazabilidad del desarrollo.<br><br>**Tantaleán Mesta, Guillermo Fabián**<br>_**TB1**_<br>Comuniqué de manera clara y adaptable mis ideas a diferentes audiencias; cuando hablé con trabajadores utilicé un lenguaje sencillo y práctico para resaltar la facilidad de uso y el beneficio inmediato de reportar incidentes, mientras que con personal de seguridad y directivos empleé un discurso más técnico y estratégico, destacando la trazabilidad, la reducción de riesgos legales y la optimización de procesos.<br>_**TP**_<br>Expuse los avances del front-end basados en el diseño en Figma, explicando los criterios técnicos y de usabilidad a mis compañeros y al equipo docente. Utilicé un lenguaje accesible para explicar las decisiones de diseño, y uno más técnico al detallar la lógica y la integración con el backend.<br><br>**Castro Sanchez, Amir Gabriel**<br>_**TB1**_<br>Expliqué las ideas del proyecto adaptando mi lenguaje según la audiencia; con los trabajadores fui más sencillo y práctico, mientras que con personal de seguridad resalté los beneficios de control y trazabilidad.<br>_**TP**_<br>Comuniqué los avances en la parte visual del MVP, enfocándome en mostrar cómo las pantallas del Figma se transformaron en componentes funcionales del front-end. Además, presenté la estructura de las ramas y el flujo de trabajo usado en GitFlow, resaltando su importancia para la coordinación del equipo. | **Conclusiones TB1:** <br>El grupo adaptó su forma de expresarse según la audiencia, usando un lenguaje sencillo con trabajadores y un enfoque más técnico con personal de seguridad y directivos, logrando transmitir el valor de SafeWork en distintos niveles.<br><br> **Conclusiones TP:** <br>Durante el trabajo parcial, el equipo fortaleció su capacidad de comunicación técnica al presentar los avances del MVP. Se logró explicar con claridad tanto los aspectos visuales (diseño e interfaz) como los técnicos (endpoints, integración y control de versiones), consolidando la comunicación efectiva dentro del equipo y frente al docente. <br><br> **Conclusiones TB2:** <br> Para la entrega de la TB2, el equipo realizo pruebas y entrevistas para la validación de la calidad del producto, se obtuvo información que nos permitió implementar cambios cruciales para la funcionalidad correcta de la aplicación. Además, se realizo la primera versión de nuestro Backend. <br><br> **Conclusiones TF:** <br> Como entrega final, el equipo realizo las correcciones de cada entrega pasada, se tomaron en cuenta las problemáticas con la aplicación y se realizó el despliegue de la versión final de la aplicación junto al backend y frontend del producto.<br>|
-| **Comunica por escrito con efectividad a diferentes rangos de audiencia** | **Cacho Seminario, Diego Alonso**<br>_**TB1**_<br>Realicé las correcciones necesarias dadas por mis compañeros respecto a los puntos con los que aporté para la TB1, además de subir correctamente mis aportes al repositorio en línea, respetando el formato requerido.<br>_**TP**_<br>Publiqué y subí correctamente los avances realizados para la entrega del Trabajo Parcial, además realicé mis grabaciones y diapositivas para el video de exposición y para la presentación en clase.<br>_**TB2**_<br> Trabaje y corregí diversas secciones de entregas anteriores, además publique los avances del TB2 en nuestro repositorio a tiempo para lograr verificar errores posibles. <br>_**TF**_<br> Avance y uni los diferentes puntos relacionados al documento del reporte para la entrega final del curso, coordine y cree las presentaciones para los videos y exposiciones de clase y registré correctamente mis aportes en los commits de nuestro repositorio. <br><br>**Vidal Castro, Miguel Angel**<br>_**TB1**_<br>Investigué y obtuve información mediante las entrevistas para tener claro las funcionalidades que debería tener la aplicación y pueda cubrir las necesidades de los usuarios.<br>_**TP**_<br>Redacté los avances del Sprint 2 y la documentación de integración del front-end con base en el diseño de Figma, incluyendo las justificaciones de cada vista. También registré los commits en Git siguiendo la convención de mensajes clara y descriptiva.<br><br>**Tantaleán Mesta, Guillermo Fabián**<br>_**TB1**_<br>Redacté documentos, reportes y materiales con un estilo estructurado y profesional que adapté según la audiencia; utilicé mensajes breves y fáciles de comprender para trabajadores, y presenté información más detallada y analítica para el personal de seguridad y directivos.<br>_**TP**_<br>Elaboré documentación técnica sobre la estructura del proyecto, describiendo las funcionalidades del MVP y la relación entre las vistas implementadas. Además, redacté los reportes del avance de desarrollo siguiendo un formato técnico y profesional para la entrega del TP.<br><br>**Castro Sanchez, Amir Gabriel**<br>_**TB1**_<br>Redacté mis aportes de manera clara y organizada, con mensajes simples para trabajadores y textos más técnicos para personal de seguridad y responsables de gestión.<br>_**TP**_<br>Describí por escrito las decisiones de diseño del front-end, explicando cómo se implementaron las pantallas del Figma y documentando los cambios mediante commits en GitFlow. Además, redacté los aportes en el informe del TP con una estructura coherente y profesional. | **Conclusiones TB1:** <br>El equipo redactó documentos claros y diferenciados para cada público, priorizando la simplicidad con trabajadores y la profundidad con personal de seguridad, lo que permitió comunicar con precisión y profesionalismo.<br><br> **Conclusiones TP:** <br>Durante el TP, se consolidó la comunicación escrita técnica mediante una documentación más estructurada del MVP, uso de GitFlow para trazabilidad y la integración de avances visuales y funcionales en el informe. El grupo demostró coherencia y claridad en la presentación escrita de su progreso. <br><br> **Conclusiones TB2:** <br> Para la TB2, se utilizó la herramienta de github y google docs para realizar el avance del documento principal. Como equipo, nos apoyamos en los diversos aspectos de la entrega teniendo en cuenta la rúbrica establecida en el aula virtual.<br><br> **Conclusiones TF:** <br> Se realizó la última versión del reporte final para la presente entrega, por medio de la herramienta de GitFlow, el equipo redacto y subio cada punto que se avanzo en la entrega.<br>|
 
 <div style="page-break-after: always;">
 
@@ -1251,17 +1252,17 @@ En el presente diagrama se observa como desde el login se tiene la opción de ab
 
 ### 4.4.3. Web Applications Mock-ups.
 
-<img width="622" height="548" alt="Image" src="https://github.com/user-attachments/assets/ccde196c-b4a1-4153-943f-ef677e4d6ea9" />
+![imgs](./imgs/WebAppMock1.png)
 
-<img width="644" height="558" alt="Image" src="https://github.com/user-attachments/assets/9e04da77-3939-4288-8d9a-16bfe79626bb" />
+![imgs](./imgs/WebAppMock2.png)
 
-<img width="628" height="556" alt="Image" src="https://github.com/user-attachments/assets/c4ed98aa-16ff-4f0a-9dee-3b6501314d6b" />
+![imgs](./imgs/WebAppMock3.png)
 
-<img width="624" height="556" alt="Image" src="https://github.com/user-attachments/assets/fd54f64d-1bd5-4be8-9d8b-fedcc22917dc" />
+![imgs](./imgs/WebAppMock4.png)
 
-<img width="627" height="554" alt="Image" src="https://github.com/user-attachments/assets/5a238aa1-486d-4904-b5c9-fcac2c47aede" />
+![imgs](./imgs/WebAppMock5.png)
 
-<img width="623" height="555" alt="Image" src="https://github.com/user-attachments/assets/369e3c38-9da7-47f8-b7ce-ce7e85551456" />
+![imgs](./imgs/WebAppMock6.png)
 
 <img width="619" height="548" alt="Image" src="https://github.com/user-attachments/assets/e14c5e31-2228-483e-997b-f2d87287bd55" />
 
@@ -1456,7 +1457,7 @@ En esta sección se presentan los diagramas de base de datos correspondientes a 
 Los diagramas muestran las tablas, sus columnas, tipos de datos, claves primarias y foráneas, 
 así como las relaciones entre las tablas, garantizando la persistencia correcta de la información.
 
-![DatabaseDiagram](./imgs/DatabaseDiagram.png)
+![DatabaseDiagram](https://github.com/user-attachments/assets/2923df94-46fe-4472-9dd5-c19b86bc96f8)
 
 # Capítulo V: Product Implementation, Validation & Deployment
 
@@ -1887,50 +1888,84 @@ Frontend
 | :---: | ----- | :---: | ----- | ----- | :---: | :---: | :---: |
 | **User Story** |  | **Work-Item / Task** |  |  |  |  |  |
 | Id | Title | Id | Title | Description | Estimation (Hours) | Assigned To | Status (To-do / In-Process / To-Review / Done) |
-| **US\#\#** |  | **T01** |  |  |  | Vidal Castro, Miguel Angel | Done |
-| **US\#\#** |  | **T02** |  |  |  | Vidal Castro, Miguel Angel | Done |
-| **US\#\#** |  | **T03** |  |  |  | Cacho Seminario, Diego Alonso | Done |
-| **US\#\#** |  | **T04** |  |  |  | Cacho Seminario, Diego Alonso | Done |
-| **US\#\#** |  | **T05** |  |  |  | Castro Sanchez, Amir Gabriel | Done |
-| **US\#\#** |  | **T06** |  |  |  | Castro Sanchez, Amir Gabriel | Done |
-| **US\#\#** |  | **T07** |  |  |  | Vidal Castro, Miguel Angel | Done |
-| **US\#\#** |  | **T08** |  |  |  | Vidal Castro, Miguel Angel | To-do |
-| **US\#\#** |  | **T09** |  |  |  | Cacho Seminario, Diego Alonso | Done |
-| **US\#\#** |  | **T10** |  |  |  | Cacho Seminario, Diego Alonso | To-do |
-| **US\#\#** |  | **T11** |  |  |  | Castro Sanchez, Amir Gabriel | Done |
-| **US\#\#** |  | **T12** |  |  |  | Castro Sanchez, Amir Gabriel | Done |
-| **US\#\#** |  | **T13** |  |  |  | Vidal Castro, Miguel Angel | Done |
-| **US\#\#** |  | **T14** |  |  |  | Vidal Castro, Miguel Angel | To-do |
-| **US\#\#** |  | **T15** |  |  |  | Cacho Seminario, Diego Alonso | Done |
-| **US\#\#** |  | **T16** |  |  |  | Cacho Seminario, Diego Alonso | Done |
-| **US\#\#** |  | **T17** |  |  |  | Castro Sanchez, Amir Gabriel | Done |
-| **US\#\#** |  | **T18** |  |  |  | Castro Sanchez, Amir Gabriel | Done |
-| **\-** | **\-** | **T\#\#** | Avance del Documento | Avance del Documento en Google Docs/Github | **5** | Everyone | Done |
-| **\-** | **\-** | **T\#\#** | Organización del Código | Organización del Código del Frontend/Backend | **5** | Everyone | Done |
+| **\-** | **\-** | **T01** | Refactor Incident Lifecycle Security | Eliminar uso del parámetro userId y obtenerlo desde el token en todo el flujo de incidentes. | **5** | Vidal Castro, Miguel Angel | Done |
+| **\-** | **\-** | **T02** | Token generation & Incident filtering | Mejorar la generación de tokens y refactorizar el endpoint getAllIncidents para filtrar según rol y companyId. | **6** | Vidal Castro, Miguel Angel | Done |
+| **\-** | **\-** | **T03** | Configure CORS & Allowed Methods | Definir reglas específicas de CORS y métodos permitidos para mayor seguridad. | **3** | Cacho Seminario, Diego Alonso | Done |
+| **\-** | **\-** | **T04** | OpenAPI & Spring Security JWT | Activar documentación OpenAPI y configurar Spring Security con autenticación JWT bearer. | **4** | Cacho Seminario, Diego Alonso | Done |
+| **\-** | **\-** | **T05** | Incident Lifecycle Events | Incident Lifecycle Events | **5** | Castro Sanchez, Amir Gabriel | Done |
+| **\-** | **\-** | **T06** | Assignment Assemblers | Assignment Assemblers | **4** | Castro Sanchez, Amir Gabriel | Done |
+| **\-** | **\-** | **T07** | Assignment Resources | Definir records AssignmentResource y CreateAssignmentResource para manejo de asignaciones. | **3** | Vidal Castro, Miguel Angel | Done |
+| **\-** | **\-** | **T08** | Assignment Query Service Impl | Implementar AssignmentQueryServiceImpl y actualizar IncidentCommandService para soportar asignaciones. | **6** | Vidal Castro, Miguel Angel | To-do |
+| **\-** | **\-** | **T09** | Assignment Query Service Interface | Crear interfaz AssignmentQueryService y actualizar IncidentCommandService. | **3** | Cacho Seminario, Diego Alonso | Done |
+| **\-** | **\-** | **T10** | Incident Entity assignTo | Agregar relación de asignación y método assignTo en la entidad Incident. | **4** | Cacho Seminario, Diego Alonso | To-do |
+| **\-** | **\-** | **T11** | Incident Resources Enhancement | Incident Resources Enhancement | **3** | Castro Sanchez, Amir Gabriel | Done |
+| **\-** | **\-** | **T12** | Incidents Controller | Incidents Controller | **5** | Castro Sanchez, Amir Gabriel | Done |
+| **\-** | **\-** | **T13** | Restore User Session | Implementar lógica para restaurar sesión de usuario usando token tras refresco. | **4** | Vidal Castro, Miguel Angel | Done |
+| **\-** | **\-** | **T14** | Fix assignTo usage | Asegurar que se use onAssignTo y no se confunda con onUpdateChange. | **2** | Vidal Castro, Miguel Angel | To-do |
+| **\-** | **\-** | **T15** | Assignments Board UI | Mejorar diseño del tablero de asignaciones (background y título). | **3** | Cacho Seminario, Diego Alonso | Done |
+| **\-** | **\-** | **T16** | Mock Assignments Card Flow | Implementar diseño mock de tarjetas de asignaciones y lógica de cambio de estado. | **5** | Cacho Seminario, Diego Alonso | Done |
+| **\-** | **\-** | **T17** | Incidents Dashboard | Implementar dashboard parcial con lista, filtrado por estado y componentes de tarjetas de incidentes. | **6** | Castro Sanchez, Amir Gabriel | Done |
+| **US21** | Recepción inmediata de notificaciones | **T18** | Recepción inmediata de notificaciones | Integrar un sistema de mensajería push (WebSockets o Firebase) que actualice al usuario sin necesidad de refrescar la página. | **6** | Castro Sanchez, Amir Gabriel | Done |
+| **US38** | Aviso instantáneo de nuevas tareas | **T19** | Aviso instantáneo de nuevas tareas | Configurar alertas automáticas vía correo electrónico y dentro de la aplicación cuando se cree una nueva tarea asignada. | **5** | Castro Sanchez, Amir Gabriel | Done |
+| **\-** | **\-** | **T20** | Avance del Documento | Avance del Documento en Google Docs/Github | **5** | Everyone | Done |
+| **\-** | **\-** | **T21** | Organización del Código | Organización del Código del Frontend/Backend | **5** | Everyone | Done |
 
 ##### 5.2.4.4. Development Evidence for Sprint Review.
 
 | Repository | Branch | Commit ID | Commit Message | Commit Message Body | Committed on (Date) |
-| :---: | :---: | :---: | ----- | :---: | :---: |
-| [https://github.com/NexoraPe/backend-safework.git](https://github.com/NexoraPe/backend-safework.git)  | /master |  2630cd9 | feat: Enchance token generation with new paremeters and refactored get All incidents endpoint. | \- Incidents endpoint now use the token, and do the filter according to the user session role and company id from the token, if its not an admin, then the getall endpoint its going to just get all incidents from the company, if its admin then all the incidents globally | 26/11/25 |
+| :---: | :---: | :---: | ----- | ----- | :---: |
+| [https://github.com/NexoraPe/backend-safework.git](https://github.com/NexoraPe/backend-safework.git)  | /master |  2630cd9 | feat: Enchance token generation with new paremeters and refactored get All incidents endpoint. | Incidents endpoint now use the token, and do the filter according to the user session role and company id from the token, if its not an admin, then the getall endpoint its going to just get all incidents from the company, if its admin then all the incidents globally | 26/11/25 |
 | [https://github.com/NexoraPe/backend-safework.git](https://github.com/NexoraPe/backend-safework.git)  | /master |  2f35c3d  | feat: Enchanced company seeding and added new company query. | \- | 26/11/25 |
+| [https://github.com/NexoraPe/backend-safework.git](https://github.com/NexoraPe/backend-safework.git)  | /master | ff8876e | feat: Activated OpenAPI documentation and Spring Security configuration with JWT bearer authentication. | \- | 25/11/25 |
 | [https://github.com/NexoraPe/front-safework.git](https://github.com/NexoraPe/front-safework.git)  | /master | dbe628d | ci: add Azure Static Web Apps workflow file | \- | 09/10/25 |
-| [https://github.com/NexoraPe/front-safework.git](https://github.com/NexoraPe/front-safework.git)  | /master |  |  | \- | /11/25 |
-| [https://github.com/NexoraPe/report.git](https://github.com/NexoraPe/report.git)  | /main |  |  | \- | /11/25 |
-| [https://github.com/NexoraPe/report.git](https://github.com/NexoraPe/report.git)  | /main |  |  | \- | /11/25 |
+| [https://github.com/NexoraPe/report.git](https://github.com/NexoraPe/report.git)  | /main | c03e238 | docs: add Sprint 4 details, team changes and a conclusion | Added the Sprint 4 details, team changes and a conclusion to the main report. | 27/11/25 |
+| [https://github.com/NexoraPe/report.git](https://github.com/NexoraPe/report.git)  | /main | 3569e6b | docs: updated report assets | Updated the report assets | 27/11/25 |
 
 ##### 5.2.4.5. Execution Evidence for Sprint Review. 
 
-Se evidencia el avance del Tercer Sprint por medio del siguiente link: link backend desplegado
+Se evidencia el avance del Cuarto Sprint por medio de las siguuientes capturas: 
+
+![imgs/EvidenceBackSwagger.jpg](imgs/EvidenceBackSwagger.jpg)
+
+![imgs/EvidenceSprint4-1.jpg](imgs/EvidenceSprint4-1.jpg)
+
+![imgs/EvidenceSprint4-2.jpg](imgs/EvidenceSprint4-2.jpg)
+
+![imgs/EvidenceSprint4-3.jpg](imgs/EvidenceSprint4-3.jpg)
+
+![imgs/EvidenceSprint4-4.jpg](imgs/EvidenceSprint4-4.jpg)
+
+![imgs/EvidenceSprint4-5.jpg](imgs/EvidenceSprint4-5.jpg)
+
+![imgs/EvidenceSprint4-6.jpg](imgs/EvidenceSprint4-6.jpg)
+
+![imgs/EvidenceSprint4-7.jpg](imgs/EvidenceSprint4-7.jpg)
+
+![imgs/EvidenceSprint4-8.jpg](imgs/EvidenceSprint4-8.jpg)
+
+![imgs/EvidenceSprint4-9.jpg](imgs/EvidenceSprint4-9.jpg)
 
 ##### 5.2.4.6. Services Documentation Evidence for Sprint Review.
 
 Se evidencia la documentación de los servicios empleados:  
-imgs
+
+<figure>
+  <img src="imgs/imgBackend.png" alt="Backend overview" style="width:700px; max-width:100%; height:auto; display:block; margin:16px auto;">
+</figure>
+
+<figure>
+  <img src="imgs/img_1backedn.png" alt="Backend detalle" style="width:700px; max-width:100%; height:auto; display:block; margin:16px auto;">
+</figure>
 
 ##### 5.2.4.7. Software Deployment Evidence for Sprint Review.
 
-Link del Backend: link Backend desplegado 
+Link del Frontend Desplegado: [Frontend desplegado](https://delightful-glacier-03ccd4010.1.azurestaticapps.net/login)
+
+Link del Backend Desplegado: [Backend desplegado](http://backend-safework.azurewebsites.net)
+
+<figure>
+  <img src="imgs/img_2backend.png" alt="Backend despliegue" style="width:700px; max-width:100%; height:auto; display:block; margin:16px auto;">
+</figure>
 
 ##### 
 
@@ -1938,15 +1973,15 @@ Link del Backend: link Backend desplegado
 
 * Reporte
 
-\*img\*
+![imgs/ReportInsights-SP4.png](imgs/ReportInsights-SP4.png)
 
 * Frontend
 
-\*img\*
+![imgs/FrontInsights-SP4.png](imgs/FrontInsights-SP4.png)
 
 * Backend
 
-\*img\*
+![imgs/BackInsights-SP4.png](imgs/BackInsights-SP4.png)
 
 
 ## **5.3. Validation Interviews**  
@@ -2234,7 +2269,7 @@ Se presenta una lista de puntuación para la calificación de las tareas.
 ## **5.4. Video About-the-Product.**  
 La presente sección incluye el video promocional que resume nuestro modelo de negocio, los beneficios del producto y sus características.
 
-Enlace para acceder al [About the Product](link)
+Enlace para acceder al [About the Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQBnSvmWkYGWQrJqyLC4RmGLAUipRIZtNFngk2h6yLCTDis?e=MgI4rU)
 
 # Conclusiones
 ## Conclusiones y recomendaciones.
@@ -2264,7 +2299,7 @@ Como última entrega del proyecto, **SafeWork** logro convertirse en una aplicac
 ## **Video About-the-Team.**  
 La presente sección incluye el video del equipo que resume nuestro avance y trabajo a lo largo del proyecto.
 
-Enlace para acceder al [About the Team](https://1drv.ms/v/c/815de42f4c97b3c1/IQA-0temdwL-TpX76noegUJ-AfAHh2aZmRsr2X_HM7TWvpQ?e=JM0zqH)
+Enlace para acceder al [About the Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQCzn1qCbGhTSJQa60lfsbzPAbwqfXy7KnTpOgtrltjeMHc)
 
 # Bibliografía
 
@@ -2285,7 +2320,9 @@ Metas de los ODS pertinentes vinculados con la seguridad y la salud en el lugar 
 
 - Enlace para acceder a la [landing page](https://nexorape.github.io/Landing-Page/index.html)
 
-- Enlace para acceder al [frontend](https://delightful-glacier-03ccd4010.1.azurestaticapps.net/)
+- Enlace para acceder al [Frontend desplegado](https://delightful-glacier-03ccd4010.1.azurestaticapps.net/login)
+
+- Enlace para acceder al [Backend desplegado]( https://backend-safework.azurewebsites.net/swagger-ui/index.html# )
 
 - Enlace para acceder a la [organización de github](https://github.com/NexoraPe)
 
@@ -2299,6 +2336,5 @@ Metas de los ODS pertinentes vinculados con la seguridad y la salud en el lugar 
 
 - Enlace para acceder al [Validation Interviews](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQAzoY-bmuwBSp9-8l_nLt5sAfa8ZZfpB4v3ezAbo7nrMi8?e=oWLtZ6)
 
-- Enlace para acceder al [About the Team](https://1drv.ms/v/c/815de42f4c97b3c1/IQA-0temdwL-TpX76noegUJ-AfAHh2aZmRsr2X_HM7TWvpQ?e=JM0zqH)
-
+- Enlace para acceder al [About the Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQCzn1qCbGhTSJQa60lfsbzPAbwqfXy7KnTpOgtrltjeMHc)
 
