@@ -7,20 +7,20 @@ COURSE PROJECT
     <br>
     <strong>Facultad de Ingeniería</strong><br>
     <strong>Carrera de Ingeniería de Software</strong><br>
-    <strong>Ciclo 2025-2</strong>
+    <strong>Ciclo 2026-1</strong>
 </p>
 
 <p align="center">
-  <strong>Código del curso: </strong>1ASI0729<br>
-  <strong>Curso: </strong>Desarrollo de Aplicaciones Open Source
+  <strong>Código del curso: </strong>1ASI0732<br>
+  <strong>Curso: </strong>Diseño de Experimentos de Ingenieria de Software
 </p>
 
 <p align="center">
-  <strong>NRC: 7349</strong>
+  <strong>NRC: 2610</strong>
 </p>
 
 <p align="center">
-    <strong>Profesor: </strong>Bautista Ubillús, Efraín Ricardo
+    <strong>Profesor: </strong>Noriega Melendez, Julio Manuel
 </p>
 
 <p align="center">
@@ -49,18 +49,22 @@ COURSE PROJECT
             <td>u202223990</td>
         </tr>
         <tr>
-            <td>Castro Sanchez, Amir Gabriel</td>
-            <td>u202310680</td>
+            <td>########, #########</td>
+            <td>##########</td>
         </tr>
         <tr>
-            <td>Vidal Castro, Miguel Angel</td>
-            <td>u202314186</td>
+            <td>########, #########</td>
+            <td>##########</td>
+        </tr>
+        <tr>
+            <td>########, #########</td>
+            <td>##########</td>
         </tr>
     </table>
 </div>
 
 <p align="center">
-    <strong>Noviembre, 2025</strong>
+    <strong>Abril, 2026</strong>
 </p>
 
 ---
@@ -69,11 +73,8 @@ COURSE PROJECT
 
 | **Versión** | **Fecha** | **Autor** | **Descripción de modificación** |
 |     ---     |     ---   |     ---   |             ---                 |
-| 1.0 | 26/08/2025 | C. Diego, C. Amir, T. Guillermo, V. Miguel | Se implementó el diseño/esqueleto del informe sobre todas las secciones|
-| 1.1 | 20/09/2025 | C. Diego, C. Amir, T. Guillermo, V. Miguel | Se implementaron diversos puntos del trabajo|
-| 2.0 | 20/09/2025 | C. Diego, C. Amir, T. Guillermo, V. Miguel | Se corrigieron detalles de la versión anterior (enlaces, idioma de artefactos, etc), se agregó la planificación y desarrollo del sprint 2, se desplegó una nueva versión de la landing page y se desplegó una primera versión del frontend web app.|
-| 3.0 | 14/11/2025 | C. Diego, C. Amir, T. Guillermo, V. Miguel | Se corrigieron detalles de la versión anterior (idioma y formato de tablas), se agregó la planificación y desarrollo del sprint 3, se desplegó una nueva versión del frontend y se desplegó una primera versión del backend.|
-| 4.0 | 30/11/2025 | C. Diego, C. Amir, V. Miguel | Se corrigieron detalles de la versión anterior (despliegue completo del Backend), se agregó la planificación y desarrollo del sprint 4, se desplegó la ultima versión del frontend, se integro el backend con el frontend y se realizaron los videos del About The Product. |
+| 1.0 | 23/04/2026 | C. Diego, ######### | Se duplico el diseño/esqueleto del informe, frontend, backend, landing page y json server |
+| 1.1 | 25/04/2026 | C. Diego, ######### | Se verificaron los errores y cambios de entregas anteriores |
 
 ---
 
@@ -265,6 +266,7 @@ del ABET – EAC - Student Outcome 3.
 
 <div style="page-break-after: always;">
 
+VERIFICAR STUDENT OUTCOME
 ---
 
 # Capítulo I: Introducción
@@ -278,10 +280,10 @@ Nuestra visión es convertirnos en la herramienta líder en gestión de segurida
 ### 1.1.2. Perfiles de integrantes del equipo
 | Foto | Nombre y Apellidos | Código de Estudiante | Carrera | Resumen de Conocimientos y Habilidades |
 |------|--------------------|----------------------|---------|----------------------------------------|
-| ![imgs](imgs/DiegoC.png) | **Diego Alonso Cacho Seminario** | u202223990 | Ingeniería de Software | Habilidades: Soy estudiante de Ingeniería de Software cursando el 7mo ciclo de mi carrera en la UPC y tengo 20 años. Me considero una persona tranquila y diligente, intentó realizar mis tareas y trabajos lo antes posible para evitar contratiempos en un futuro, especialmente si son actividades que consumen mucho tiempo. Como miembro de equipo buscaré ayudar a mis compañeros cuando lo necesiten, realizando además mis entregas lo más temprano posible. Habilidades en C++, C#, Python, Unity 2D/3D, html/css/js. |
-| ![imgs](imgs/amir.png) | **Amir Gabriel Castro Sanchez** | u202310680 | Ingeniería de Software | Conocimientos en vue.js, c++, c#, .net. Aporta al equipo su capacidad de análisis crítico y compañerismo. |
-| ![Foto 3](imgs/guillermo.JPG) | **Guillermo Fabián Tantaleán Mesta** | u202311958 | Ingeniería de Software | Especialista en desarrollo de aplicaciones móviles. Tengo conocimientos de ITSM, ISO 9000, etc.
-| <img width="237" height="224" alt="Captura de pantalla 2025-09-20 044338" src="https://github.com/user-attachments/assets/20dd59c2-9771-4d65-a2d4-f7af16c1afea" /> | **Miguel Angel Vidal Castro** | u202314186 | Ingeniería de Software | Conocimientos en gestión de proyectos y optimización de procesos. Aporta al equipo su enfoque en eficiencia, coordinación y manejo de recursos. |
+| ![imgs](imgs/DiegoC.png) | **Diego Alonso Cacho Seminario** | u202223990 | Ingeniería de Software | Habilidades: Soy estudiante de Ingeniería de Software cursando el 7mo ciclo de mi carrera en la UPC y tengo 21 años. Me considero una persona tranquila y diligente, intentó realizar mis tareas y trabajos lo antes posible para evitar contratiempos en un futuro, especialmente si son actividades que consumen mucho tiempo. Como miembro de equipo buscaré ayudar a mis compañeros cuando lo necesiten, realizando además mis entregas lo más temprano posible. Habilidades en C++, C#, Python, Unity 2D/3D, html/css/js. |
+| ![imgs](imgs/NAME.png) | **###############** | u############### | Ingeniería de Software | #################### |
+| ![imgs](imgs/NAME.png) | **###############** | u############### | Ingeniería de Software | #################### |
+| ![imgs](imgs/NAME.png) | **###############** | u############### | Ingeniería de Software | #################### |
 
 ## 1.2. Solution Profile
 SafeWork es una aplicación web diseñada para mejorar la gestión de la seguridad laboral en fábricas, almacenes y construcciones. Permite que los trabajadores reporten incidentes en tiempo real, evitando retrasos o la pérdida de información en papeleo. La plataforma asigna responsables de seguimiento, envía notificaciones inmediatas y facilita el monitoreo de cada caso hasta su resolución. Con esto, se garantiza mayor transparencia, rapidez y trazabilidad en los procesos de seguridad. SafeWork contribuye a reducir riesgos, fomentar una cultura de prevención y brindar a las empresas una base de datos útil para analizar y prevenir futuros incidentes.
