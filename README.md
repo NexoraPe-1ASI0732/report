@@ -49,16 +49,16 @@ COURSE PROJECT
             <td>u202223990</td>
         </tr>
         <tr>
-            <td>########, #########</td>
-            <td>##########</td>
+            <td>Ruiz Huisa, Daniel Elias </td>
+            <td>202210764</td>
         </tr>
         <tr>
-            <td>########, #########</td>
-            <td>##########</td>
+            <td>Palacin Lazo, Gerardo Valentin </td>
+            <td>u20211c201</td>
         </tr>
         <tr>
-            <td>########, #########</td>
-            <td>##########</td>
+            <td>Villugas Jeronimo, Liam Anderson </td>
+            <td>u202211634</td>
         </tr>
     </table>
 </div>
@@ -75,11 +75,12 @@ COURSE PROJECT
 |     ---     |     ---   |     ---   |             ---                 |
 | 1.0 | 23/04/2026 | C. Diego, ######### | Se duplico el diseño/esqueleto del informe, frontend, backend, landing page y json server |
 | 1.1 | 25/04/2026 | C. Diego, ######### | Se verificaron los errores y cambios de entregas anteriores |
+| 1.2 | 30/04/2026 | C. Diego, ######### | Se verifico el funcionamiento del frontend y backend |
 
 ---
 
 # Project Report Collaboration Insights
-**URL del repositorio para el Project Report:** [https://github.com/boafe/report](https://github.com/boafe/report)
+**URL del repositorio para el Project Report:** [https://github.com/NexoraPe-1ASI0732/report](https://github.com/NexoraPe-1ASI0732/report) 
 
 **TB1**
 
