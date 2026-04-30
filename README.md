@@ -954,7 +954,6 @@ Se utilizó la escala Fibonacci para la estimación de los Story Points. En tota
 | 4 | US04 | Registro de Usuario | Como usuario nuevo, deseo registrarme con correo y usuario para crear una cuenta en SafeWork. | 5 |
 | 5 | US05 | Inicio de Sesión Seguro | Como usuario, deseo iniciar sesión con mis credenciales para acceder a mis funcionalidades. | 5 |
 | 6 | US06 | Roles Diferenciados | Como usuario, deseo seleccionar mi rol (trabajador o personal SST) para personalizar la experiencia. | 5 |
-| 7 | US07 | Recuperación de Contraseña | Como usuario, deseo recuperar mi contraseña mediante botón para poder acceder si la olvido. | 5 |
 | 8 | US08 | Revisión de contraseña al registrarse | Como usuario nuevo, deseo que el sistema me pida utilizar ciertos caracteres para asegurar mi contraseña. | 3 |
 | 9 | US09 | Reportar Accidente | Como trabajador, deseo registrar un accidente laboral con fotos y detalles para notificar de inmediato a la empresa. | 8 |
 | 10 | US10 | Reportar Incidente | Como trabajador, deseo reportar un incidente menor para que quede registrado y pueda prevenir futuros accidentes. | 5 |
@@ -965,7 +964,6 @@ Se utilizó la escala Fibonacci para la estimación de los Story Points. En tota
 | 15 | US15 | Visualizar Estado del Reporte | Como trabajador, deseo ver en qué estado está mi reporte para mantenerme informado. | 3 |
 | 16 | US16 | Historial de Reportes | Como trabajador, deseo consultar mis reportes anteriores para tener un registro personal. | 3 |
 | 17 | US17 | Preguntas Frecuentes | Como visitante, deseo consultar una sección de FAQ para resolver dudas comunes. | 2 |
-| 18 | US18 | Chat de Soporte | Como usuario, deseo comunicarme con un asistente virtual para resolver dudas rápidamente. | 5 |
 | 19 | US19 | Edición de Perfil | Como usuario, deseo editar mis datos personales y de contacto para mantener mi perfil actualizado. | 3 |
 | 20 | US20 | Foto de Perfil | Como trabajador, deseo agregar una foto para personalizar mi perfil en la plataforma. | 3 |
 | 21 | US21 | Notificaciones en Tiempo Real | Como usuario, deseo recibir notificaciones push cuando mi reporte cambie de estado. | 8 |
@@ -973,18 +971,13 @@ Se utilizó la escala Fibonacci para la estimación de los Story Points. En tota
 | 23 | US23 | Adjuntar Documentos | Como personal SST, deseo adjuntar documentos técnicos al reporte para que quede registrado todo el proceso. | 5 |
 | 24 | US24 | Adjuntar Evidencias | Como trabajador, deseo adjuntar fotos al momento de reportar un accidente para mostrar lo ocurrido. | 5 |
 | 25 | US25 | Notas internas en el caso | Como personal de SST, deseo añadir notas internas a los casos para poder documentar hallazgos o comentarios relevantes sin necesidad de un chat. | 5 |
-| 26 | US26 | Línea de tiempo del caso | Como trabajador afectado, deseo ver una línea de tiempo con las etapas de mi caso para comprender fácilmente su progreso. | 5 |
 | 27 | US27 | Visualizar Detalles del reporte | Como personal SST, deseo ver detalles sobre los reportes enviados. | 3 |
 | 28 | US28 | Visualización de reportes en pantalla | Como administrador, deseo visualizar los reportes directamente en pantalla en lugar de exportarlos, para tomar decisiones rápidas. | 5 |
-| 29 | US29 | Seguridad de Datos | Como administrador, deseo que toda la información esté encriptada para proteger la privacidad. | 8 |
-| 30 | US30 | Cambio de contraseña desde el perfil | Como usuario, deseo cambiar mi contraseña desde la configuración de mi perfil para mantener la seguridad de mi cuenta. | 3 |
 | 31 | US31 | Navegación desde cualquier dispositivo | Como visitante, deseo que la landing page sea responsive para acceder desde cualquier dispositivo. | 3 |
 | 32 | US32 | Actualización de área/departamento en perfil | Como usuario, deseo actualizar el área o departamento al que pertenezco para que la información de mi perfil refleje correctamente mi puesto en la organización. | 2 |
-| 33 | US33 | Cierre automático de sesión por inactividad | Como usuario, deseo que mi sesión se cierre automáticamente tras un periodo de inactividad para mantener la seguridad de mis datos. | 3 |
 | 34 | US34 | Confirmación de Reporte | Como trabajador, deseo recibir un comprobante al enviar un reporte para asegurarme de que se registró. | 2 |
 | 35 | US35 | Búsqueda de Reportes | Como personal SST, deseo buscar reportes por trabajador, fecha o tipo de incidente para gestionar más rápido. | 5 |
 | 36 | US36 | Validación de campos obligatorios en registro | Como usuario, deseo que el sistema me obligue a completar los campos requeridos (nombre, fecha, lugar, etc.) para asegurar que la información esté completa realizar un reporte | 3 |
-| 37 | US37 | Búsqueda en Preguntas Frecuentes | Como usuario, deseo buscar palabras clave dentro de la sección de FAQ para encontrar rápidamente respuestas a mis dudas. | 3 |
 | 38 | US38 | Notificación de Nueva Tarea | Como responsable de un reporte, deseo recibir notificación cuando me asignan un caso. | 5 |
 | 39 | US39 | Filtro por estado de casos | Como personal de SST, deseo filtrar los casos por estado (abierto, en proceso, cerrado) para gestionar mejor la carga de trabajo. | 3 |
 | 40 | US40 | Registro de Auditoría | Como administrador, deseo tener un historial de todas las acciones en la plataforma para auditorías. | 5 |
