@@ -64,7 +64,7 @@ COURSE PROJECT
 </div>
 
 <p align="center">
-    <strong>Abril, 2026</strong>
+    <strong>Mayo, 2026</strong>
 </p>
 
 ---
@@ -76,6 +76,9 @@ COURSE PROJECT
 | 1.0 | 23/04/2026 | C. Diego, ######### | Se duplico el diseño/esqueleto del informe, frontend, backend, landing page y json server |
 | 1.1 | 25/04/2026 | C. Diego, R. Daniel, ######### | Se verificaron los errores y cambios de entregas anteriores |
 | 1.2 | 30/04/2026 | C. Diego, R. Daniel, ######### | Se verifico el funcionamiento del frontend y backend |
+| 1.3 | 11/05/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se actualizo el funcionamiento del frontend y backend |
+| 1.4 | 11/05/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se modifico el Product Backlog |
+| 1.5 | 11/05/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se añadieron secciones nuevas de los capitulos |
 
 ---
 
