@@ -238,7 +238,22 @@ COURSE PROJECT
     - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
     - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
   - [5.4. Video About-the-Product](#54-video-about-the-product)
-
+- [Capítulo VI: Product Verification & Validation](#capítulo-vi-product-verification--validation)
+  - [6.1. Testing Suites & Validation](#61-testing-suites--validation)
+    - [6.1.1. Core Entities Unit Tests](#611-core-entities-unit-tests)
+    - [6.1.2. Core Integration Tests](#612-core-integration-tests)
+    - [6.1.3. Core Behavior-Driven Development](#613-core-behavior-driven-development)
+    - [6.1.4. Core System Tests](#614-core-system-tests)
+- [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
+  - [7.1. Continuous Integration](#71-continuous-integration)
+    - [7.1.1. Tools and Practices](#711-tools-and-practices)
+    - [7.1.2. Build & Test Suite Pipeline Components](#712-build--test-suite-pipeline-components)
+  - [7.2. Continuous Delivery](#72-continuous-delivery)
+    - [7.2.1. Tools and Practices](#721-tools-and-practices)
+    - [7.2.2. Stages Deployment Pipeline Components](#722-stages-deployment-pipeline-components)
+  - [7.3. Continuous deployment](#73-continuous-deployment)
+    - [7.3.1. Tools and Practices](#731-tools-and-practices)
+    - [7.3.2. Production Deployment Pipeline Components](#732-production-deployment-pipeline-components)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones](#conclusiones-y-recomendaciones)
   - [Video About-the-Team](#video-about-the-team)
@@ -951,9 +966,6 @@ Se utilizó la escala Fibonacci para la estimación de los Story Points. En tota
 
 | \#Orden | Epic / Story ID | Título | Descripción | Story Points (1/2/3/5/8) |
 | :---: | :---: | ----- | ----- | :---: |
-| 1 | US01 | Navegación Intuitiva en la Landing Page | Como visitante de SafeWork, deseo que la landing page tenga una barra de navegación clara y accesible para encontrar fácilmente las secciones importantes. | 2 |
-| 2 | US02 | Visualización de Beneficios | Como visitante, deseo visualizar claramente los beneficios de usar SafeWork para entender su propuesta de valor. | 1 |
-| 3 | US03 | Acceso a Testimonios | Como visitante, deseo leer testimonios de otros usuarios para generar confianza en la plataforma. | 2 |
 | 4 | US04 | Registro de Usuario | Como usuario nuevo, deseo registrarme con correo y usuario para crear una cuenta en SafeWork. | 5 |
 | 5 | US05 | Inicio de Sesión Seguro | Como usuario, deseo iniciar sesión con mis credenciales para acceder a mis funcionalidades. | 5 |
 | 6 | US06 | Roles Diferenciados | Como usuario, deseo seleccionar mi rol (trabajador o personal SST) para personalizar la experiencia. | 5 |
@@ -966,27 +978,16 @@ Se utilizó la escala Fibonacci para la estimación de los Story Points. En tota
 | 14 | US14 | Actualización de Estado | Como personal SST, deseo cambiar el estado de un reporte (pendiente, en proceso, cerrado) para llevar control de avances. | 3 |
 | 15 | US15 | Visualizar Estado del Reporte | Como trabajador, deseo ver en qué estado está mi reporte para mantenerme informado. | 3 |
 | 16 | US16 | Historial de Reportes | Como trabajador, deseo consultar mis reportes anteriores para tener un registro personal. | 3 |
-| 17 | US17 | Preguntas Frecuentes | Como visitante, deseo consultar una sección de FAQ para resolver dudas comunes. | 2 |
-| 19 | US19 | Edición de Perfil | Como usuario, deseo editar mis datos personales y de contacto para mantener mi perfil actualizado. | 3 |
-| 20 | US20 | Foto de Perfil | Como trabajador, deseo agregar una foto para personalizar mi perfil en la plataforma. | 3 |
 | 21 | US21 | Notificaciones en Tiempo Real | Como usuario, deseo recibir notificaciones push cuando mi reporte cambie de estado. | 8 |
-| 22 | US22 | Recordatorios de la aplicación | Como trabajador afectado, deseo recibir recordatorios dentro de la aplicación sobre el estado de mi reporte para estar informado sin necesidad de revisar constantemente. | 3 |
 | 23 | US23 | Adjuntar Documentos | Como personal SST, deseo adjuntar documentos técnicos al reporte para que quede registrado todo el proceso. | 5 |
 | 24 | US24 | Adjuntar Evidencias | Como trabajador, deseo adjuntar fotos al momento de reportar un accidente para mostrar lo ocurrido. | 5 |
 | 25 | US25 | Notas internas en el caso | Como personal de SST, deseo añadir notas internas a los casos para poder documentar hallazgos o comentarios relevantes sin necesidad de un chat. | 5 |
 | 27 | US27 | Visualizar Detalles del reporte | Como personal SST, deseo ver detalles sobre los reportes enviados. | 3 |
 | 28 | US28 | Visualización de reportes en pantalla | Como administrador, deseo visualizar los reportes directamente en pantalla en lugar de exportarlos, para tomar decisiones rápidas. | 5 |
-| 31 | US31 | Navegación desde cualquier dispositivo | Como visitante, deseo que la landing page sea responsive para acceder desde cualquier dispositivo. | 3 |
 | 32 | US32 | Actualización de área/departamento en perfil | Como usuario, deseo actualizar el área o departamento al que pertenezco para que la información de mi perfil refleje correctamente mi puesto en la organización. | 2 |
-| 34 | US34 | Confirmación de Reporte | Como trabajador, deseo recibir un comprobante al enviar un reporte para asegurarme de que se registró. | 2 |
-| 35 | US35 | Búsqueda de Reportes | Como personal SST, deseo buscar reportes por trabajador, fecha o tipo de incidente para gestionar más rápido. | 5 |
 | 36 | US36 | Validación de campos obligatorios en registro | Como usuario, deseo que el sistema me obligue a completar los campos requeridos (nombre, fecha, lugar, etc.) para asegurar que la información esté completa realizar un reporte | 3 |
-| 38 | US38 | Notificación de Nueva Tarea | Como responsable de un reporte, deseo recibir notificación cuando me asignan un caso. | 5 |
 | 39 | US39 | Filtro por estado de casos | Como personal de SST, deseo filtrar los casos por estado (abierto, en proceso, cerrado) para gestionar mejor la carga de trabajo. | 3 |
 | 40 | US40 | Registro de Auditoría | Como administrador, deseo tener un historial de todas las acciones en la plataforma para auditorías. | 5 |
-| 41 | US41 | Botones CTA principales en la Landing Page | Como visitante de la landing page, deseo ver botones de llamada a la acción (CTA) claramente visibles y funcionales para poder interactuar fácilmente con las opciones clave del producto. | 2 |
-| 42 | US42 | Sección de Preguntas Frecuentes (FAQ) | Como visitante de la landing page, deseo acceder a una sección de preguntas frecuentes bien estructurada para resolver dudas comunes sin necesidad de contactar soporte. | 3 |
-| 43 | US43 | Sección de Membresía y Planes | Como visitante interesado en el producto, deseo ver una sección que detalle los planes de membresía y sus características para poder comparar opciones y tomar una decisión informada. |  5 |
 
 ---
 
@@ -2269,6 +2270,39 @@ Se presenta una lista de puntuación para la calificación de las tareas.
 La presente sección incluye el video promocional que resume nuestro modelo de negocio, los beneficios del producto y sus características.
 
 Enlace para acceder al [About the Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQBnSvmWkYGWQrJqyLC4RmGLAUipRIZtNFngk2h6yLCTDis?e=MgI4rU)
+
+# Capítulo VI: Product Verification & Validation
+
+## 6.1. Testing Suites & Validation.
+
+### 6.1.1. Core Entities Unit Tests.
+
+### 6.1.2. Core Integration Tests.
+
+### 6.1.3. Core Behavior-Driven Development.
+
+### 6.1.4. Core System Tests.
+
+# Capítulo VII: DevOps Practices
+
+## 7.1. Continuous Integration.
+
+### 7.1.1. Tools and Practices.
+
+### 7.1.2. Build & Test Suite Pipeline Components.
+
+## 7.2. Continuous Delivery.
+
+### 7.2.1. Tools and Practices.
+
+### 7.2.2. Stages Deployment Pipeline Components.
+
+## 7.3. Continuous deployment.
+
+### 7.3.1. Tools and Practices.
+
+### 7.3.2. Production Deployment Pipeline Components.
+
 
 # Conclusiones
 ## Conclusiones y recomendaciones.
