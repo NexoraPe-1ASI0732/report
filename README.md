@@ -241,6 +241,7 @@ COURSE PROJECT
     - [5.3.2. Registro de Entrevistas](#532-registro-de-entrevistas)
     - [5.3.3. Evaluaciones según heurísticas](#533-evaluaciones-según-heurísticas)
   - [5.4. Video About-the-Product](#54-video-about-the-product)
+  - [5.5. Acuerdo de Servicio - SaaS](#55-acuerdo-de-servicio---saas)
 - [Capítulo VI: Product Verification & Validation](#capítulo-vi-product-verification--validation)
   - [6.1. Testing Suites & Validation](#61-testing-suites--validation)
     - [6.1.1. Core Entities Unit Tests](#611-core-entities-unit-tests)
@@ -2273,6 +2274,56 @@ Se presenta una lista de puntuación para la calificación de las tareas.
 La presente sección incluye el video promocional que resume nuestro modelo de negocio, los beneficios del producto y sus características.
 
 Enlace para acceder al [About the Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQBnSvmWkYGWQrJqyLC4RmGLAUipRIZtNFngk2h6yLCTDis?e=MgI4rU)
+
+## **5.5. Acuerdo de Servicio - SaaS.**
+
+Este Acuerdo de Nivel de Servicio (en adelante, **"SLA"**) rige el uso de la plataforma **SafeWork** bajo el modelo de Software como Servicio (SaaS). El presente documento establece los compromisos de disponibilidad, soporte y seguridad entre los desarrolladores de SafeWork y las organizaciones clientes, asegurando un entorno confiable para la gestión de Seguridad y Salud en el Trabajo (SST).
+
+### 1. Descripción del Alcance del Servicio
+**SafeWork** proporciona una solución centralizada en la nube para la gestión de riesgos laborales. El servicio incluye, de manera no limitativa:
+* **Gestión de Reportes:** Registro detallado de incidentes y accidentes con soporte para evidencias multimedia (fotografías y documentos técnicos).
+* **Georreferenciación Externa:** Integración de enlaces dinámicos a servicios de mapas (como Google Maps) para la ubicación precisa de los eventos reportados.
+* **Control de Estados:** Seguimiento en tiempo real del ciclo de vida de cada caso (Abierto, En Proceso, Cerrado).
+
+### 2. Disponibilidad del Servicio (Uptime)
+SafeWork garantiza una disponibilidad mensual del sistema del **99.9%**. Esta métrica asegura que la plataforma sea accesible para los trabajadores y el personal SST en momentos críticos.
+
+| Métrica | Objetivo de Nivel de Servicio |
+| :--- | :--- |
+| **Tiempo de Actividad Mensual** | 99.9% (24/7) |
+| **Ventanas de Mantenimiento** | Domingos de 02:00 AM a 04:00 AM (GMT-5) |
+| **Notificación de Interrupción** | Mínimo 48 horas de anticipación para cambios programados |
+
+### 3. Soporte Técnico y Tiempos de Respuesta
+El equipo de soporte de SafeWork atenderá las incidencias técnicas según su impacto en la operatividad de la organización cliente:
+
+| Severidad | Descripción | Tiempo de Respuesta |
+| :--- | :--- | :--- |
+| **Crítico (P1)** | Interrupción total que impide realizar reportes de accidentes. | < 2 Horas |
+| **Alto (P2)** | Fallos en la carga de evidencias o visualización de analíticas. | < 8 Horas |
+| **Normal (P3)** | Consultas generales, actualización de perfiles o dudas de uso. | < 24 Horas |
+
+### 4. Seguridad, Privacidad y Control de Acceso
+Dada la sensibilidad de los datos de salud ocupacional, SafeWork implementa las siguientes medidas de seguridad:
+
+* **Autenticación y Autorización:** Uso de **JSON Web Tokens (JWT)** para asegurar que cada solicitud a la API provenga de un usuario legítimo.
+* **Seguridad en el Tránsito:** Implementación obligatoria de protocolos **HTTPS** para cifrar la comunicación entre el cliente y el servidor.
+* **Control de Acceso Basado en Roles (RBAC):**
+    * **Trabajador:** Acceso restringido al reporte de incidentes y consulta de su historial propio.
+    * **Personal SST:** Acceso a herramientas de gestión, asignación de responsables, adjunto de documentos técnicos y visualización de métricas.
+* **Integridad de Evidencias:** Las imágenes y documentos técnicos adjuntos se almacenan de forma persistente y están vinculados exclusivamente al reporte correspondiente.
+
+### 5. Responsabilidades del Cliente
+Para el correcto funcionamiento del modelo SaaS, el cliente se compromete a:
+1. Proveer conectividad a internet estable para el uso de la plataforma móvil y web.
+2. Mantener la confidencialidad de las credenciales de acceso de sus empleados.
+3. Garantizar que la información y evidencias adjuntas cumplan con las normativas locales de privacidad.
+
+### 6. Actualizaciones y Mantenimiento Evolutivo
+Bajo el modelo SaaS, SafeWork se encarga de la implementación de mejoras continuas sin intervención del cliente:
+* **Parches de Seguridad:** Aplicación inmediata de correcciones ante vulnerabilidades detectadas.
+* **Nuevas Funcionalidades:** Despliegue de actualizaciones del Product Backlog (filtros avanzados, validaciones de campos, etc.) de manera transparente para el usuario final.
+
 
 # Capítulo VI: Product Verification & Validation
 
