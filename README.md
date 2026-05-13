@@ -2329,13 +2329,143 @@ Bajo el modelo SaaS, SafeWork se encarga de la implementación de mejoras contin
 
 ## 6.1. Testing Suites & Validation.
 
+Los Core Entities Unit Tests son esenciales en el desarrollo de software, ya que garantizan la calidad y
+correcto funcionamiento de las entidades centrales, previniendo errores y facilitando el mantenimiento
+del código.
+
 ### 6.1.1. Core Entities Unit Tests.
+
+**Analytics Test**
+
+![PU1](imgs/cap6/analytics-test.png)
+
+**Assignments Test**
+
+![PU2](imgs/cap6/assignments-test.png)
+
+**LoginForm Test**
+
+![PU3](imgs/cap6/loginForm-test.png)
+
+**Incident Test**
+
+![PU4](imgs/cap6/incidents-test.png)
+
+**Notifications Test**
+
+![PU5](imgs/cap6/notifications-test.png)
+
+![Resumen1](imgs/cap6/brief1.png)
+
 
 ### 6.1.2. Core Integration Tests.
 
+Las Core Integration Tests son fundamentales para asegurar que los controladores interactúen
+correctamente con otros componentes del sistema, como servicios y bases de datos. Al evaluar escenarios
+de error, estas pruebas garantizan que el sistema maneje adecuadamente situaciones inesperadas y
+responda con los códigos de estado correctos. Esto mejora la experiencia del usuario, facilita la
+depuración y contribuye a desarrollar un software confiable y de alta calidad.
+
+**Analytics Controller**
+
+![PI1](imgs/cap6/cap6-1-2/analytics-itest.png)
+
+**Assignments Controller**
+
+![PI2](imgs/cap6/cap6-1-2/assignments-itest.png)
+
+**LoginForm Controller**
+
+![PI3](imgs/cap6/cap6-1-2/loginform-itest.png)
+
+**Notification Controller**
+
+![PI4](imgs/cap6/cap6-1-2/notifications-itest.png)
+
+**Incident Controller**
+
+![PI5](imgs/cap6/cap6-1-2/incidents-itest.png)
+
+![Resumen2](imgs/cap6/cap6-1-2/brief2-itest.png)
+
+
 ### 6.1.3. Core Behavior-Driven Development.
 
+![CB1](imgs/cap6/cap6-1-3/coreB-1.png)
+
+![CB2](imgs/cap6/cap6-1-3/coreB-2.png)
+
+![CB3](imgs/cap6/cap6-1-3/coreB-3.png)
+
+
 ### 6.1.4. Core System Tests.
+
+| ID   | Nombre | Descripción |
+|------|---------|-------------|
+| US04 | Registro de Usuario | Como usuario nuevo, deseo registrarme con correo y usuario para crear una cuenta en SafeWork. |
+
+![US04](imgs/cap6/cap6-1-4/us04.png)
+
+| ID | Nombre | Descripción |
+|----|---------|-------------|
+| US05 | Inicio de Sesión Seguro | Como usuario, deseo iniciar sesión con mis credenciales para acceder a mis funcionalidades. |
+
+![US05](imgs/cap6/cap6-1-4/us05.png)
+
+| ID | Nombre | Descripción |
+|----|---------|-------------|
+| US10 | Reportar Incidente | Como trabajador, deseo reportar un incidente menor para que quede registrado y pueda prevenir futuros accidentes. |
+
+![US10](imgs/cap6/cap6-1-4/us10.png)
+
+| ID | Nombre | Descripción |
+|----|---------|-------------|
+| US11 | Geolocalización del Reporte | Como trabajador, deseo que mi reporte incluya ubicación geográfica para mayor precisión en la atención. |
+
+![US11](imgs/cap6/cap6-1-4/us11.png)
+
+| ID | Nombre | Descripción |
+|----|---------|-------------|
+| US06 | Roles Diferenciados | Como usuario, deseo seleccionar mi rol (trabajador o personal SST) para personalizar la experiencia. |
+
+![US06](imgs/cap6/cap6-1-4/us06.png)
+
+| ID | Nombre | Descripción |
+|----|---------|-------------|
+| US12 | Revisión de Reportes | Como personal SST, deseo revisar todos los reportes enviados para priorizar los más urgentes. |
+
+![US12](imgs/cap6/cap6-1-4/us12.png)
+
+| ID | Nombre | Descripción |
+|----|---------|-------------|
+| US13 | Asignación de Responsables | Como personal SST, deseo asignar responsables a cada caso para garantizar el seguimiento. |
+
+![US13](imgs/cap6/cap6-1-4/us13.png)
+
+| ID | Nombre | Descripción |
+|----|---------|-------------|
+| US14 | Actualización de Estado | Como personal SST, deseo cambiar el estado de un reporte (pendiente, en proceso, cerrado) para llevar control de avances. |
+
+![US14](imgs/cap6/cap6-1-4/us14.png)
+
+| ID | Nombre | Descripción |
+|----|---------|-------------|
+| US15 | Visualizar Estado del Reporte | Como trabajador, deseo ver en qué estado está mi reporte para mantenerme informado. |
+
+![US15](imgs/cap6/cap6-1-4/us15.png)
+
+| ID | Nombre | Descripción |
+|----|---------|-------------|
+| US16 | Historial de Reportes | Como trabajador, deseo consultar mis reportes anteriores para tener un registro personal. |
+
+![US16](imgs/cap6/cap6-1-4/us16.png)
+
+| ID | Nombre | Descripción |
+|----|---------|-------------|
+| US23 | Adjuntar Documentos | Como personal SST, deseo adjuntar documentos técnicos al reporte para que quede registrado todo el proceso. |
+
+![US23](imgs/cap6/cap6-1-4/us23.png)
+
 
 # Capítulo VII: DevOps Practices
 
