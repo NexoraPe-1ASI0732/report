@@ -2473,20 +2473,165 @@ depuración y contribuye a desarrollar un software confiable y de alta calidad.
 
 ### 7.1.1. Tools and Practices.
 
+En el ámbito del desarrollo y pruebas de software, es esencial contar con herramientas y métodos que
+aseguren tanto la calidad del código como la productividad del equipo. En nuestro proceso, como cada miembro de equipo
+buscamos emplear una variedad de herramientas para verificar, validar, optimizar las funcionalidades y posibles
+comportamientos de la aplicacion.
+
+Para garantizar la calidad y el correcto funcionamiento de SafeWork, se aplicaron metodologías de Desarrollo Orientado por Pruebas (TDD) y Desarrollo Orientado por Comportamiento (BDD). Estas metodologías permitieron validar tanto la lógica interna de los componentes como el comportamiento esperado del sistema desde la perspectiva del usuario. Para ello, se utilizaron distintas herramientas de pruebas automatizadas e integración que facilitaron la verificación continua de las funcionalidades implementadas.
+
+| Herramienta | Tipo | Descripción | Propósito |
+|-------------|------|-------------|------------|
+| Jasmine | Herramienta para pruebas unitarias (TDD) | Framework utilizado en Angular para definir y ejecutar pruebas unitarias sobre componentes y servicios. | Verificar el correcto funcionamiento de componentes, métodos y lógica de negocio del sistema. |
+| Karma | Ejecutor de pruebas (TDD) | Herramienta que permite ejecutar automáticamente las pruebas unitarias en diferentes navegadores. | Automatizar la ejecución de pruebas y validar la estabilidad del sistema durante el desarrollo. |
+| Cucumber / Gherkin | Herramienta de BDD | Permite definir escenarios funcionales mediante lenguaje natural utilizando archivos `.feature`. | Validar que el comportamiento del sistema cumpla con los requerimientos funcionales definidos por el negocio. |
+| Selenium IDE | Herramienta de pruebas automatizadas | Extensión que permite grabar y ejecutar pruebas funcionales sobre la interfaz web. | Automatizar flujos de usuario y verificar el funcionamiento correcto de las funcionalidades principales. |
+| Angular TestBed | Herramienta de integración para pruebas | Utilidad de Angular que facilita la configuración de componentes y dependencias en entornos de prueba. | Simular el entorno real de ejecución para validar componentes y formularios del sistema. |
+
 ### 7.1.2. Build & Test Suite Pipeline Components.
+
+![PLC](imgs/cap6/assignments-test.png)
+
+
+![PLC2](imgs/cap6/cap6-1-2/incidents-itest.png)
 
 ## 7.2. Continuous Delivery.
 
+Su objetivo es el de automatizar la integración y pruebas del código, manteniendo todo listo para un
+despliegue cuando sea necesario.
+
 ### 7.2.1. Tools and Practices.
 
+**GitHub y GitHub Actions:**  
+Se utilizaron para gestionar el repositorio del proyecto y automatizar procesos de integración continua (CI), como la ejecución de pruebas unitarias y validaciones del código antes de integrar cambios a ramas principales.
+
+**Angular CLI:**  
+Herramienta utilizada para la generación, compilación y ejecución del proyecto frontend desarrollado en Angular. Facilitó la automatización de tareas de desarrollo y pruebas.
+
+**Selenium IDE:**  
+Herramienta empleada para automatizar pruebas funcionales sobre la interfaz web de SafeWork, permitiendo validar flujos de usuario como inicio de sesión, registro de incidentes y visualización de reportes.
+
+**Jasmine y Karma:**  
+Framework y ejecutor de pruebas utilizados para implementar y ejecutar pruebas unitarias sobre componentes y servicios del sistema desarrollado en Angular.
+
+**Cucumber / Gherkin:**  
+Utilizados para la definición de escenarios BDD mediante archivos `.feature`, permitiendo representar funcionalidades del sistema en lenguaje entendible tanto para desarrolladores como stakeholders.
+
+---
+
+### Practices (Prácticas)
+
+#### Feature Branching y Pull Requests
+Las funcionalidades y correcciones fueron desarrolladas en ramas independientes, permitiendo trabajar de manera organizada y evitando afectar la rama principal del proyecto. Posteriormente, los cambios fueron integrados mediante Pull Requests y validaciones previas.
+
+#### Continuous Integration
+Cada cambio realizado en el repositorio fue integrado continuamente mediante commits y pushes frecuentes hacia GitHub, facilitando la validación constante del código y la colaboración entre los miembros del equipo.
+
+#### Automated Testing
+Se implementaron pruebas unitarias y pruebas funcionales automatizadas para verificar el correcto funcionamiento de componentes, formularios y funcionalidades críticas del sistema.
+
+#### Validation in Development Environment
+Antes de integrar nuevas funcionalidades, las pruebas fueron ejecutadas en entornos locales de desarrollo para asegurar la estabilidad del sistema y detectar errores antes de su integración final.
+
+#### Manual Review and Validation
+Antes de aprobar cambios importantes en el repositorio, se realizó una revisión manual del código y de los resultados obtenidos en las pruebas automatizadas para asegurar la calidad de las funcionalidades implementadas.
+
+
 ### 7.2.2. Stages Deployment Pipeline Components.
+
+### Integración Continua (CI)
+Cada vez que se realizaron cambios en el proyecto mediante commits y pushes al repositorio de GitHub, se ejecutaron procesos de validación del código y pruebas unitarias del frontend desarrollado en Angular. Esto permitió detectar errores tempranamente y mantener una versión estable del sistema.
+
+### Validación en Entorno de Desarrollo
+Antes de integrar nuevas funcionalidades a la rama principal, las características implementadas fueron probadas en un entorno local de desarrollo. En esta etapa se verificó el correcto funcionamiento de formularios, componentes, autenticación y flujos principales del sistema SafeWork.
+
+### Pruebas Automatizadas
+El pipeline incluyó la ejecución de pruebas unitarias con Jasmine y Karma, así como pruebas funcionales automatizadas mediante Selenium IDE y escenarios BDD definidos con Cucumber/Gherkin. Esto permitió validar tanto la lógica interna como el comportamiento esperado del sistema.
+
+### Revisión Manual del Código
+Antes de aprobar la integración de nuevas funcionalidades, se realizó una revisión manual del código fuente y de los resultados obtenidos en las pruebas automatizadas. Esto ayudó a garantizar la calidad y estabilidad de las implementaciones realizadas.
+
+### Monitoreo y Retroalimentación
+Durante el proceso de desarrollo y pruebas, se analizaron los errores obtenidos en compilación, ejecución y pruebas automatizadas para corregir incidencias y mejorar continuamente la estabilidad del sistema. Además, GitHub permitió mantener un historial de cambios y seguimiento de versiones del proyecto.
 
 ## 7.3. Continuous deployment.
 
 ### 7.3.1. Tools and Practices.
 
+En esta sección se presentan las herramientas y prácticas utilizadas para implementar Continuous Deployment en el proyecto SafeWork. Estas herramientas permitieron automatizar procesos de integración, validación y despliegue continuo, facilitando entregas rápidas y manteniendo la estabilidad del sistema durante el desarrollo.
+
+### Tools (Herramientas)
+
+- **GitHub:**  
+  Plataforma utilizada para el control de versiones y administración del repositorio del proyecto, permitiendo la colaboración entre los integrantes del equipo mediante ramas, commits y pull requests.
+
+- **GitHub Actions:**  
+  Herramienta empleada para automatizar procesos de integración y despliegue continuo (CI/CD), ejecutando validaciones y pruebas automáticamente después de cada push realizado al repositorio.
+
+- **Angular CLI:**  
+  Utilizada para compilar y ejecutar la aplicación frontend desarrollada en Angular, facilitando la generación automática de builds listas para despliegue.
+
+- **Jasmine y Karma:**  
+  Framework y ejecutor de pruebas utilizados para validar automáticamente componentes y funcionalidades del sistema antes de cada integración.
+
+- **Selenium IDE:**  
+  Herramienta de automatización empleada para ejecutar pruebas funcionales sobre la interfaz web y verificar el correcto comportamiento de los flujos principales del sistema.
+
+---
+
+### Practices (Prácticas)
+
+#### Feature Branching
+Cada funcionalidad fue desarrollada en ramas independientes para evitar afectar directamente la rama principal del proyecto. Una vez validadas las funcionalidades, estas fueron integradas mediante merges hacia ramas principales.
+
+#### Commit-Based Deployment
+Los commits y pushes realizados al repositorio activaron procesos automáticos de validación y pruebas, permitiendo mantener una integración continua y asegurando que el sistema permanezca estable después de cada cambio.
+
+#### Automated Testing Before Deployment
+Antes de integrar nuevas funcionalidades, se ejecutaron pruebas unitarias y funcionales automatizadas para verificar el correcto funcionamiento del sistema y reducir errores durante el despliegue.
+
+#### Continuous Deployment Workflow
+El flujo de trabajo permitió mantener versiones actualizadas del proyecto de manera continua, facilitando la integración rápida de cambios y asegurando una entrega constante de nuevas funcionalidades.
+
+#### Version Control and Recovery
+El uso de GitHub permitió mantener control sobre las versiones del sistema, facilitando la recuperación de cambios anteriores y la corrección rápida de errores detectados durante el desarrollo.
+
 ### 7.3.2. Production Deployment Pipeline Components.
 
+En esta sección se describen los componentes utilizados durante el proceso de integración, validación y despliegue continuo del proyecto SafeWork. El pipeline implementado permitió automatizar pruebas, mantener control de versiones y facilitar la integración constante de nuevas funcionalidades en el sistema.
+
+
+### Componentes del Pipeline de Integración Continua (GitHub)
+
+#### 1. Control de Versiones
+GitHub fue utilizado para gestionar el repositorio del proyecto y mantener el control de versiones del sistema. Cada cambio realizado por los integrantes del equipo fue registrado mediante commits y pushes hacia ramas específicas del proyecto.
+
+#### 2. Integración de Cambios
+Las nuevas funcionalidades fueron desarrolladas en ramas independientes y posteriormente integradas mediante merges y pull requests, permitiendo mantener estabilidad en la rama principal del proyecto.
+
+#### 3. Validación Automática
+Después de realizar cambios en el código, se ejecutaron pruebas unitarias y validaciones automáticas para verificar que los componentes y funcionalidades continuaran funcionando correctamente.
+
+#### 4. Seguimiento y Recuperación de Versiones
+GitHub permitió mantener un historial completo de cambios realizados durante el desarrollo, facilitando la recuperación de versiones anteriores y el seguimiento de errores detectados en el sistema.
+
+
+### Componentes del Pipeline de Pruebas del Frontend (Angular)
+
+#### 1. Compilación del Frontend
+Angular CLI fue utilizado para compilar y ejecutar la aplicación frontend, permitiendo validar que el proyecto se construya correctamente después de cada modificación realizada.
+
+#### 2. Ejecución de Pruebas Unitarias
+Las pruebas unitarias desarrolladas con Jasmine y ejecutadas mediante Karma permitieron validar automáticamente el comportamiento de componentes, formularios y servicios del sistema.
+
+#### 3. Ejecución de Pruebas Funcionales
+Selenium IDE fue utilizado para automatizar pruebas funcionales sobre la interfaz web, verificando escenarios importantes como autenticación, registro de incidentes y visualización de reportes.
+
+#### 4. Validación de Escenarios BDD
+Los escenarios definidos mediante archivos `.feature` utilizando Cucumber/Gherkin permitieron validar funcionalidades desde la perspectiva del usuario y asegurar el cumplimiento de los requerimientos funcionales.
+
+#### 5. Corrección Continua de Errores
+Durante el desarrollo y las pruebas automatizadas, se identificaron y corrigieron errores detectados en compilación, ejecución y validación funcional, permitiendo mejorar continuamente la estabilidad del sistema.
 
 # Conclusiones
 ## Conclusiones y recomendaciones.
