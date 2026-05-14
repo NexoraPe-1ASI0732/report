@@ -79,6 +79,7 @@ COURSE PROJECT
 | 1.3 | 11/05/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se actualizo el funcionamiento del frontend y backend |
 | 1.4 | 11/05/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se modifico el Product Backlog |
 | 1.5 | 11/05/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se añadieron secciones nuevas de los capitulos |
+| 1.6 | 14/05/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se corrigieron observaciones de la exposición |
 
 ---
 
