@@ -50,7 +50,7 @@ COURSE PROJECT
         </tr>
         <tr>
             <td>Ruiz Huisa, Daniel Elias </td>
-            <td>202210764</td>
+            <td>u202210764</td>
         </tr>
         <tr>
             <td>Palacin Lazo, Gerardo Valentin </td>
