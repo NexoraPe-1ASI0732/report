@@ -24,7 +24,7 @@ COURSE PROJECT
 </p>
 
 <p align="center">
-    <strong>Informe de Trabajo Final</strong>
+    <strong>Informe de Trabajo Parcial</strong>
 </p>
 
 <p align="center">
@@ -922,7 +922,7 @@ Las Epic definidas para SafeWork están orientadas a cubrir las necesidades prin
 | US08 | Revisión de contraseña al registrarse | Como usuario nuevo, deseo que el sistema me pida utilizar ciertos caracteres para asegurar mi contraseña. | **Escenario 01:** Given el usuario ingresa una contraseña insegura When no cumple los requisitos de seguridad Then debería mostrarse un mensaje de error **Escenario 02:** Given el usuario ingresa una contraseña segura When confirma el registro Then su cuenta debería crearse sin problemas | EP02 |
 | US09 | Reportar Accidente | Como trabajador, deseo registrar un accidente laboral con fotos y detalles para notificar de inmediato a la empresa. | **Escenario 1:** Given el usuario sufrió un accidente When selecciona la opción “Reportar” Then debería poder completar un formulario con descripción, ubicación y archivos adjuntos | EP04 |
 | US10 | Reportar Incidente | Como trabajador, deseo reportar un incidente menor para que quede registrado y pueda prevenir futuros accidentes. | **Escenario 1:** Given el usuario es trabajador y selecciona “Incidente” en el formulario When describe la situación Then no debería necesitar adjuntar documentos obligatorios | EP04 |
-| US11 | Geolocalización del Reporte | Como trabajador, deseo que mi reporte incluya ubicación geográfica para mayor precisión en la atención. | **Escenario 1:** Given el usuario está registrando un reporte When habilita la geolocalización Then el sistema debería guardar las coordenadas en el reporte | EP04 |
+| US11 | Inclusión de Referencias Externas | Como trabajador, deseo incluir un enlace de referencia en mi reporte para brindar mayor contexto o la ubicación exacta del incidente mediante un mapa externo. | **Escenario 1:** Given el usuario está registrando un reporte When ingresa una URL de referencia válida (ej. Google Maps) Then el sistema debe guardar y asociar dicho enlace al reporte.| EP04 |
 | US12 | Revisión de Reportes | Como personal SST, deseo revisar todos los reportes enviados para priorizar los más urgentes. | **Escenario 1:** Given el usuario accede al panel de reportes When selecciona un reporte Then debería ver el nivel de urgencia | EP05 |
 | US13 | Asignación de Responsables | Como personal SST, deseo asignar responsables a cada caso para garantizar el seguimiento. | **Escenario 1:** Given el usuario revisa un reporte When elige “Asignar responsable” Then debería enviarse una notificación al designado | EP05 |
 | US14 | Actualización de Estado | Como personal SST, deseo cambiar el estado de un reporte (pendiente, en proceso, cerrado) para llevar control de avances. | **Escenario 1:** Given un reporte está en revisión When el usuario actualiza su estado Then el cambio debería reflejarse al refrescar la página | EP05 |
@@ -966,17 +966,16 @@ Se realizaron los siguientes cuadros en la herramienta Canva Whiteboard, el link
 ![imgs](imgs/ImpactMapSeg2.png)
 
 ## 3.3. Product Backlog.
-Se utilizó la escala Fibonacci para la estimación de los Story Points. En total se tuvieron **162** Story Points.
+Se utilizó la escala Fibonacci para la estimación de los Story Points. En total se tuvieron **93** Story Points.
 
 | \#Orden | Epic / Story ID | Título | Descripción | Story Points (1/2/3/5/8) |
 | :---: | :---: | ----- | ----- | :---: |
 | 4 | US04 | Registro de Usuario | Como usuario nuevo, deseo registrarme con correo y usuario para crear una cuenta en SafeWork. | 5 |
 | 5 | US05 | Inicio de Sesión Seguro | Como usuario, deseo iniciar sesión con mis credenciales para acceder a mis funcionalidades. | 5 |
 | 6 | US06 | Roles Diferenciados | Como usuario, deseo seleccionar mi rol (trabajador o personal SST) para personalizar la experiencia. | 5 |
-| 8 | US08 | Revisión de contraseña al registrarse | Como usuario nuevo, deseo que el sistema me pida utilizar ciertos caracteres para asegurar mi contraseña. | 3 |
 | 9 | US09 | Reportar Accidente | Como trabajador, deseo registrar un accidente laboral con fotos y detalles para notificar de inmediato a la empresa. | 8 |
 | 10 | US10 | Reportar Incidente | Como trabajador, deseo reportar un incidente menor para que quede registrado y pueda prevenir futuros accidentes. | 5 |
-| 11 | US11 | Geolocalización del Reporte | Como trabajador, deseo que mi reporte incluya ubicación geográfica para mayor precisión en la atención. | 8 |
+| 11 | US11 | Inclusión de Referencias Externas | Como trabajador, deseo incluir un enlace de referencia en mi reporte para brindar mayor contexto o la ubicación exacta del incidente mediante un mapa externo. | 5 |
 | 12 | US12 | Revisión de Reportes | Como personal SST, deseo revisar todos los reportes enviados para priorizar los más urgentes. | 5 |
 | 13 | US13 | Asignación de Responsables | Como personal SST, deseo asignar responsables a cada caso para garantizar el seguimiento. | 5 |
 | 14 | US14 | Actualización de Estado | Como personal SST, deseo cambiar el estado de un reporte (pendiente, en proceso, cerrado) para llevar control de avances. | 3 |
@@ -2420,7 +2419,7 @@ depuración y contribuye a desarrollar un software confiable y de alta calidad.
 
 | ID | Nombre | Descripción |
 |----|---------|-------------|
-| US11 | Geolocalización del Reporte | Como trabajador, deseo que mi reporte incluya ubicación geográfica para mayor precisión en la atención. |
+| US11 | Inclusión de Referencias Externas | Como trabajador, deseo incluir un enlace de referencia en mi reporte para brindar mayor contexto o la ubicación exacta del incidente mediante un mapa externo. | EP04 |
 
 ![US11](imgs/cap6/cap6-1-4/us11.png)
 
