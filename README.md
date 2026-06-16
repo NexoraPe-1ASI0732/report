@@ -2781,7 +2781,105 @@ A continuación se detallan las tarjetas de experimentos diseñadas para validar
 | **Hypothesis** | Creemos que la adición de filtros interactivos aumentará la satisfacción del usuario respecto a la navegabilidad de la plataforma en un 20%. |
 | **Null Hypothesis** | La adición de filtros rápidos no tendrá impacto en la satisfacción ni en la percepción de navegabilidad de la plataforma. |
 
+## 8.2. Experiment Design
 
+En esta fase se estructuran los experimentos que permitirán validar las hipótesis planteadas, definiendo métricas, condiciones y métodos de evaluación enfocados exclusivamente en la plataforma web de SafeWork.
+
+### 8.2.1. Hypotheses.
+
+A continuación, se detallan las hipótesis formuladas siguiendo el modelo Belief-Hypothesis-Null Hypothesis para cada pregunta del backlog.
+
+**Question 1**
+¿En qué medida la integración de un mapa interactivo de Google Maps facilitará la ubicación espacial de los incidentes en comparación con el uso de enlaces de texto estáticos?
+*   **Belief:** La integración nativa de un mapa interactivo de Google Maps facilitará la comprensión y ubicación espacial de los incidentes para el personal SST.
+*   **Hypothesis:** Creemos que la integración de un mapa interactivo reducirá el tiempo percibido de ubicación del incidente, aumentando la satisfacción del usuario en al menos un 25%, ya que el personal SST no tendrá que abandonar la plataforma para visualizar el lugar exacto del accidente.
+*   **Null Hypothesis:** La integración de un mapa interactivo de Google Maps no tendrá ningún impacto en el tiempo percibido ni en la satisfacción del usuario al ubicar incidentes.
+
+**Question 2**
+¿Cómo afectará la implementación de botones de acción rápida en la vista principal a la productividad general al gestionar reportes de incidentes?
+*   **Belief:** La implementación de botones de acción rápida en la lista principal reducirá la fricción y mejorará la productividad del personal SST.
+*   **Hypothesis:** Creemos que la implementación de acciones rápidas (reducción de clics) aumentará la percepción de agilidad de la plataforma en un 30%, ya que los usuarios podrán cambiar el estado de los reportes sin necesidad de ingresar a la vista detallada de cada caso.
+*   **Null Hypothesis:** La implementación de botones de acción rápida no tendrá ningún impacto en la productividad ni en la percepción de agilidad de los usuarios.
+
+**Question 3**
+¿Cuál será el impacto de un rediseño de colores y layout en las métricas de accesibilidad y velocidad de carga evaluadas mediante Lighthouse?
+*   **Belief:** Un rediseño del layout y la paleta de colores optimizará el rendimiento técnico y la accesibilidad visual de la plataforma web.
+*   **Hypothesis:** Creemos que el rediseño del layout y esquema de colores incrementará los puntajes de "Accessibility" y "Performance" en Google Lighthouse en al menos 15 puntos, ya que se mejorará el contraste y se optimizará la carga del DOM.
+*   **Null Hypothesis:** El rediseño de colores y layout no tendrá ningún impacto medible en las métricas de accesibilidad ni de rendimiento en Google Lighthouse.
+
+**Question 4**
+¿De qué manera la visualización directa de la tasa de reclamos por accidentes impactará en la satisfacción y eficiencia del personal SST al tomar decisiones preventivas?
+*   **Belief:** La visualización de un reporte gráfico sobre la tasa de reclamos por empleador mejorará la capacidad del personal SST para tomar decisiones preventivas.
+*   **Hypothesis:** Creemos que la inclusión de un gráfico visual de la tasa de reclamos logrará que al menos el 80% de los usuarios califiquen el Dashboard como "Muy útil", ya que tendrán acceso inmediato a datos críticos sin requerir cálculos manuales.
+*   **Null Hypothesis:** La visualización directa de la tasa de reclamos no tendrá ningún impacto en la satisfacción ni en la toma de decisiones del personal SST.
+
+**Question 5**
+¿Qué efecto tendrá la adición de filtros rápidos de estado en la página de inicio sobre el tiempo de búsqueda de reportes críticos?
+*   **Belief:** La adición de filtros rápidos interactivos agilizará la navegación y la localización de reportes de alta prioridad.
+*   **Hypothesis:** Creemos que la implementación de filtros rápidos de estado aumentará la satisfacción sobre la navegabilidad en un 20%, ya que los usuarios podrán segmentar la información relevante con un solo clic.
+*   **Null Hypothesis:** La adición de filtros rápidos de estado no tendrá ningún impacto en la navegación ni en la localización de reportes críticos.
+
+### 8.2.2. Domain Business Metrics
+
+Para asegurar que los experimentos impacten los objetivos de SafeWork, se definen las siguientes métricas de negocio del dominio:
+
+| Métrica | Fórmula de Cálculo | Técnica de Recolección | Meta Deseada |
+| :--- | :--- | :--- | :--- |
+| **Tiempo de Triaje de Incidentes** | (Suma del tiempo desde el reporte hasta la asignación) / Total de incidentes | Análisis de logs de base de datos (Timestamps de creación vs. asignación). | Disminuir en un 15% el tiempo promedio de triaje. |
+| **Tasa de Resolución de Casos** | (Incidentes Cerrados / Total de Incidentes Reportados) * 100 | Consulta SQL en el panel de Analytics de la plataforma. | Mantener una tasa de resolución mensual superior al 85%. |
+| **Tasa de Adopción de Plataforma** | (Usuarios Activos Diarios / Total de Usuarios Registrados) * 100 | Herramientas de web tracking (ej. Google Analytics). | Alcanzar una adopción superior al 70% en el personal SST. |
+
+### 8.2.3. Measures.
+
+Los criterios seleccionados para recolectar evidencia durante los experimentos son:
+* **Task Success Rate:** Porcentaje de usuarios que logran cambiar el estado de un reporte o ubicar un incidente utilizando el mapa integrado sin cometer errores.
+* **Customer Satisfaction Score (CSAT):** Puntuación obtenida mediante cuestionarios de escala Likert (1-5) administrados a los 20 usuarios de prueba tras ejecutar tareas específicas.
+* **Click Count:** Número promedio de clics requeridos para completar el cambio de estado de un caso.
+* **Lighthouse Scores:** Puntuaciones cuantitativas (0-100) arrojadas por la herramienta Google Lighthouse en las categorías de *Performance* y *Accessibility*.
+
+### 8.2.4. Conditions.
+
+Para garantizar la fiabilidad del experimento, se establecen dos escenarios de prueba bien definidos:
+* **Condición de Control (As-Is):** Los usuarios interactúan con la versión actual de la plataforma web. Esta versión incluye enlaces de texto externos para las ubicaciones, requiere ingresar al detalle del caso para cambiar estados, no posee el gráfico de tasa de reclamos, carece de filtros rápidos y posee el layout original.
+* **Condición Experimental (To-Be):** Los usuarios interactúan con el prototipo/entorno de pruebas que incluye las mejoras implementadas: el mapa interactivo nativo, los botones de acción rápida en la lista, el dashboard de métricas consolidado, los filtros dinámicos y el rediseño optimizado para Lighthouse.
+
+### 8.2.5. Scale Calculations and Decisions.
+
+Debido al alcance del proyecto y las directivas académicas, el experimento se ejecutará a una escala controlada.
+* **Tamaño de la Muestra:** Se realizarán pruebas con un panel de **20 usuarios** en total (combinando perfiles de Trabajadores y Personal SST).
+* **Nivel de Significancia ($\alpha$):** 5% (0.05), aceptando un 5% de probabilidad de cometer un error Tipo I (falso positivo).
+* **Potencia Estadística:** 80%, asegurando la capacidad de detectar un efecto real minimizando los errores Tipo II.
+* **Efecto Mínimo Detectable (MDE):** Dado el tamaño reducido de la muestra (20), se busca identificar cambios de gran magnitud en el comportamiento y percepción (MDE del 20% al 30% de mejora en satisfacción y reducción de tiempo) para que los hallazgos sean accionables.
+
+### 8.2.6. Methods Selection.
+
+Para ejecutar los experimentos aplicando la premisa de "Simplest Useful Thing", se seleccionaron los siguientes métodos:
+1. **Pruebas de Usabilidad Moderadas (A/B testing proxy):** Se someterá a los 20 usuarios a ejecutar las mismas tareas tanto en la Condición de Control como en la Experimental de la aplicación web. Al finalizar, se administrarán **cuestionarios de preguntas cerradas** para medir objetivamente la satisfacción.
+2. **Auditorías Técnicas Automatizadas:** Uso de **Google Lighthouse** y herramientas similares (ej. Catchpoint) para medir empíricamente el rendimiento de carga y los estándares de accesibilidad antes y después del rediseño del layout web.
+
+### 8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.
+
+Preparación analítica para asegurar la eficiencia en el rastreo de los experimentos web:
+
+| Goal (Meta) | KPI (Indicador Clave) | Metric (Métrica Específica) |
+| :--- | :--- | :--- |
+| Reducir la fricción operativa del SST | Eficiencia de Interfaz | Promedio de clics para cambiar un estado (Meta: < 2 clics). |
+| Mejorar la experiencia visual espacial | Utilidad Percibida del Mapa | % de encuestados que califican el mapa interactivo con 4 o 5 puntos. |
+| Optimizar rendimiento web | Calidad Técnica | Puntaje de Lighthouse: Performance > 85, Accessibility > 90. |
+| Toma de decisiones basada en datos | Tasa de Aprobación Analítica | % de usuarios SST que afirman que la gráfica de reclamos es "Muy Útil". |
+
+### 8.2.8. Web Tracking Plan.
+
+*Nota: Por directiva del proyecto, este plan de rastreo se enfoca exclusivamente en la experiencia Web, omitiendo cualquier seguimiento en plataformas móviles.*
+
+Para registrar el comportamiento de los usuarios en la web y obtener datos cuantitativos, se define la siguiente estructura de eventos a ser capturados (mediante herramientas como Google Analytics 4 o registros en base de datos):
+
+| Event Name | Trigger (Desencadenador) | Properties (Propiedades) |
+| :--- | :--- | :--- |
+| `map_interaction` | El usuario hace zoom o clic en un marcador dentro del mapa interactivo de un incidente. | `incident_id`, `user_role`, `time_spent` |
+| `quick_status_change` | El usuario cambia el estado de un reporte desde la lista principal (botón de acción rápida). | `old_status`, `new_status`, `user_id` |
+| `dashboard_viewed` | El usuario ingresa a la vista de analíticas y visualiza la tasa de reclamos. | `duration_seconds`, `user_role` |
+| `filter_applied` | El usuario hace clic en alguno de los filtros rápidos de la pantalla de inicio. | `filter_type` (ej. Abierto, Crítico) |
 
 
 # Conclusiones
