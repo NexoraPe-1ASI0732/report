@@ -323,6 +323,25 @@ COURSE PROJECT
       - [3. Ejecución de Pruebas Funcionales](#3-ejecución-de-pruebas-funcionales)
       - [4. Validación de Escenarios BDD](#4-validación-de-escenarios-bdd)
       - [5. Corrección Continua de Errores](#5-corrección-continua-de-errores)
+- [Capítulo VIII: Experiment-Driven Development](#capítulo-viii-experiment-driven-development)
+  - [8.1. Experiment Planning](#81-experiment-planning)
+    - [8.1.1. As-Is Summary.](#811-as-is-summary)
+    - [8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims.](#812-raw-material-assumptions-knowledge-gaps-ideas-claims)
+    - [8.1.3. Experiment-Ready Questions.](#813-experiment-ready-questions)
+    - [8.1.4. Question Backlog.](#814-question-backlog)
+    - [8.1.5. Experiment Cards.](#815-experiment-cards)
+  - [8.2. Experiment Design](#82-experiment-design)
+    - [8.2.1. Hypotheses.](#821-hypotheses)
+    - [8.2.2. Domain Business Metrics](#822-domain-business-metrics)
+    - [8.2.3. Measures.](#823-measures)
+    - [8.2.4. Conditions.](#824-conditions)
+    - [8.2.5. Scale Calculations and Decisions.](#825-scale-calculations-and-decisions)
+    - [8.2.6. Methods Selection.](#826-methods-selection)
+    - [8.2.7. Data Analytics: Goals, KPIs and Metrics Selection.](#827-data-analytics-goals-kpis-and-metrics-selection)
+    - [8.2.8. Web Tracking Plan.](#828-web-tracking-plan)
+  - [8.3. Experimentation](#83-experimentation)
+    - [8.3.1. To-Be User Stories.](#831-to-be-user-stories)
+    - [8.3.2. To-Be Product Backlog](#832-to-be-product-backlog)
 - [Conclusiones](#conclusiones)
   - [Conclusiones y recomendaciones.](#conclusiones-y-recomendaciones)
   - [**Video About-the-Team.**](#video-about-the-team)
@@ -2881,6 +2900,39 @@ Para registrar el comportamiento de los usuarios en la web y obtener datos cuant
 | `dashboard_viewed` | El usuario ingresa a la vista de analíticas y visualiza la tasa de reclamos. | `duration_seconds`, `user_role` |
 | `filter_applied` | El usuario hace clic en alguno de los filtros rápidos de la pantalla de inicio. | `filter_type` (ej. Abierto, Crítico) |
 
+## 8.3. Experimentation
+
+A partir de los experimentos diseñados y las hipótesis planteadas, se han definido nuevas historias de usuario orientadas a implementar mejoras específicas en la experiencia de usuario, interfaz y funcionalidad de la plataforma web de SafeWork.
+
+### 8.3.1. To-Be User Stories.
+
+Para agrupar estas nuevas funcionalidades, se ha definido una nueva Epic dentro del proyecto:
+
+| Epic / Story ID | Título | Descripción |
+| :---: | ----- | ----- |
+| **EP14** | Mejoras Experimentales y Optimización UX/UI | Como usuario de SafeWork, deseo interactuar con herramientas web optimizadas (mapas interactivos, acciones rápidas, filtros y gráficas) para gestionar reportes con mayor eficiencia y accesibilidad. |
+
+A continuación se presentan las 5 nuevas User Stories (To-Be) que corresponden directamente a las tarjetas de experimentos planteadas:
+
+| Epic / Story ID | Título | Descripción | Criterios de Aceptación | Relacionado con (Epic ID) |
+| :---: | ----- | ----- | ----- | :---: |
+| **US01** | Integración de Mapa Interactivo | Como personal SST, deseo visualizar un mapa interactivo embebido directamente en el detalle del reporte para localizar espacialmente el incidente sin necesidad de abrir enlaces externos. | **Escenario 1:** Given el usuario está en el detalle de un reporte con una URL de ubicación válida When la página carga Then el sistema debe renderizar un mapa interactivo mostrando un marcador en la ubicación exacta. | EP14 |
+| **US02** | Cambio de Estado Rápido | Como personal SST, deseo tener botones de acción rápida en la lista principal de incidentes para cambiar el estado de un reporte con un solo clic, sin entrar al detalle. | **Escenario 1:** Given el usuario visualiza la tabla de incidentes When hace clic en el botón de acción rápida (ej. "Pasar a En Proceso") Then el estado del reporte se actualiza inmediatamente en la lista. | EP14 |
+| **US03** | Optimización Visual y Accesibilidad | Como usuario, deseo navegar por una interfaz con contraste de colores mejorado y estructura optimizada para garantizar una carga rápida y una lectura accesible (según Lighthouse). | **Escenario 1:** Given el usuario navega por la plataforma web When la herramienta renderiza las vistas Then los textos y fondos deben cumplir con el ratio de contraste adecuado para facilitar la lectura. | EP14 |
+| **US04** | Gráfico de Tasa de Reclamos | Como personal SST, deseo visualizar un gráfico resumen con la tasa de reclamos por accidentes en el Dashboard principal para tomar decisiones preventivas rápidas. | **Escenario 1:** Given el usuario accede a la sección de Analytics When la vista se renderiza Then debe aparecer una gráfica (ej. barras o pastel) consolidando la cantidad de reclamos generados recientemente. | EP14 |
+| **US05** | Filtros Rápidos de Navegación | Como personal SST, deseo utilizar botones de filtros rápidos en la página de inicio (ej. "Ver Críticos", "Ver Abiertos") para segmentar mi vista de trabajo de forma inmediata. | **Escenario 1:** Given el usuario está en el panel de inicio y hace clic en la tarjeta "Incidentes Críticos" When se ejecuta la acción Then la tabla inferior solo debe mostrar los registros categorizados con dicha prioridad. | EP14 |
+
+### 8.3.2. To-Be Product Backlog
+
+Las nuevas historias de usuario han sido estimadas utilizando la secuencia de Fibonacci, priorizando la viabilidad técnica para una implementación rápida y efectiva en la entrega final.
+
+| \#Orden | Epic / Story ID | Título | Descripción | Story Points (1/2/3/5/8) |
+| :---: | :---: | ----- | ----- | :---: |
+| 01 | US01 | Integración de Mapa Interactivo | Como personal SST, deseo visualizar un mapa interactivo embebido directamente en el detalle del reporte para localizar espacialmente el incidente sin necesidad de abrir enlaces externos. | 5 |
+| 02 | US02 | Cambio de Estado Rápido | Como personal SST, deseo tener botones de acción rápida en la lista principal de incidentes para cambiar el estado de un reporte con un solo clic, sin entrar al detalle. | 3 |
+| 03 | US03 | Optimización Visual y Accesibilidad | Como usuario, deseo navegar por una interfaz con contraste de colores mejorado y estructura optimizada para garantizar una carga rápida y una lectura accesible (según Lighthouse). | 3 |
+| 04 | US04 | Gráfico de Tasa de Reclamos | Como personal SST, deseo visualizar un gráfico resumen con la tasa de reclamos por accidentes en el Dashboard principal para tomar decisiones preventivas rápidas. | 5 |
+| 05 | US05 | Filtros Rápidos de Navegación | Como personal SST, deseo utilizar botones de filtros rápidos en la página de inicio (ej. "Ver Críticos", "Ver Abiertos") para segmentar mi vista de trabajo de forma inmediata. | 2 |
 
 # Conclusiones
 ## Conclusiones y recomendaciones.
