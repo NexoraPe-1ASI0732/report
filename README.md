@@ -64,7 +64,7 @@ COURSE PROJECT
 </div>
 
 <p align="center">
-    <strong>Mayo, 2026</strong>
+    <strong>Junio, 2026</strong>
 </p>
 
 ---
@@ -2690,6 +2690,99 @@ Los escenarios definidos mediante archivos `.feature` utilizando Cucumber/Gherki
 
 #### 5. Corrección Continua de Errores
 Durante el desarrollo y las pruebas automatizadas, se identificaron y corrigieron errores detectados en compilación, ejecución y validación funcional, permitiendo mejorar continuamente la estabilidad del sistema.
+
+# Capítulo VIII: Experiment-Driven Development
+
+## 8.1. Experiment Planning
+
+### 8.1.1. As-Is Summary.
+
+Actualmente, **SafeWork** es una plataforma web funcional desarrollada en Angular y Spring Boot, conectada a una base de datos relacional. Permite a los trabajadores reportar incidentes laborales y al personal de Seguridad y Salud en el Trabajo (SST) gestionar estos casos mediante asignaciones y cambios de estado. 
+
+En su estado actual, la plataforma presenta oportunidades de optimización en la experiencia de usuario (UX) y el rendimiento. La ubicación de los incidentes se maneja mediante enlaces estáticos externos, lo que requiere que el personal SST abandone la plataforma para visualizar mapas. Además, el flujo de cambio de estado de los reportes exige múltiples clics y navegación entre vistas detalladas. Visualmente, el layout base no ha sido optimizado con herramientas de auditoría de accesibilidad y rendimiento, y la gestión de métricas carece de un reporte consolidado sobre la tasa de reclamos por empleador, lo que retrasa la toma de decisiones preventivas.
+
+### 8.1.2. Raw Material: Assumptions, Knowledge Gaps, Ideas, Claims.
+
+**Assumptions (Suposiciones):**
+* La inclusión de un reporte visual de la tasa de reclamos por accidentes permitirá al personal SST tomar decisiones más rápidas sin necesidad de exportar datos a herramientas externas.
+* Reducir la cantidad de clics en los procesos principales (como cambiar el estado de un reporte) aumentará la productividad y satisfacción de los usuarios.
+* Mejorar el contraste de colores y el layout de la plataforma impactará positivamente en los puntajes de accesibilidad y performance evaluados por herramientas como Lighthouse.
+* La integración nativa de un mapa interactivo (como Google Maps) en lugar de usar enlaces de texto estáticos facilitará la comprensión inmediata de la ubicación del incidente.
+* La implementación de filtros rápidos interactivos en el panel principal acelerará la búsqueda de casos urgentes por parte del personal de SST.
+
+**Knowledge Gaps (Brechas de conocimiento):**
+* Se desconoce el tiempo exacto que le toma actualmente al personal SST navegar hacia un enlace externo para verificar la ubicación y regresar a la plataforma.
+* Falta medir la puntuación base de accesibilidad y rendimiento del layout actual en entornos de producción.
+
+### 8.1.3. Experiment-Ready Questions.
+
+1. ¿De qué manera la visualización directa de la tasa de reclamos por accidentes impactará en la satisfacción y eficiencia del personal SST al tomar decisiones preventivas?
+2. ¿Cómo afectará la implementación de acciones rápidas (reducción de clics) en la vista principal a la productividad general al gestionar reportes de incidentes?
+3. ¿Cuál será el impacto de un rediseño de colores y layout en las métricas de accesibilidad y velocidad de carga evaluadas mediante Lighthouse?
+4. ¿En qué medida la integración de un mapa interactivo de Google Maps facilitará la ubicación espacial de los incidentes en comparación con el uso de enlaces de texto estáticos?
+5. ¿Qué efecto tendrá la adición de filtros rápidos de estado en la página de inicio sobre el tiempo promedio de búsqueda de reportes críticos?
+
+### 8.1.4. Question Backlog.
+
+Priorización de las preguntas a evaluar mediante experimentación, ordenadas por el impacto en la experiencia del usuario y la factibilidad técnica para la fase de pruebas:
+
+1. ¿En qué medida la integración de un mapa interactivo de Google Maps facilitará la ubicación espacial de los incidentes en comparación con el uso de enlaces de texto estáticos? *(Alto impacto operativo)*
+2. ¿Cómo afectará la implementación de acciones rápidas (reducción de clics) en la vista principal a la productividad general al gestionar reportes de incidentes? *(Mejora directa de UX)*
+3. ¿Cuál será el impacto de un rediseño de colores y layout en las métricas de accesibilidad y velocidad de carga evaluadas mediante Lighthouse? *(Métrica técnica objetiva)*
+4. ¿De qué manera la visualización directa de la tasa de reclamos por accidentes impactará en la satisfacción y eficiencia del personal SST al tomar decisiones preventivas? *(Aporte de valor analítico)*
+5. ¿Qué efecto tendrá la adición de filtros rápidos de estado en la página de inicio sobre el tiempo promedio de búsqueda de reportes críticos? *(Optimización de navegación)*
+
+### 8.1.5. Experiment Cards.
+
+A continuación se detallan las tarjetas de experimentos diseñadas para validar las hipótesis mediante cuestionarios a usuarios de prueba (muestra de 20 personas) y auditorías de rendimiento.
+
+**Experiment Card 1: Integración de Geolocalización (Google Maps)**
+
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿En qué medida la integración de un mapa interactivo de Google Maps facilitará la ubicación espacial de los incidentes en comparación con el uso de enlaces de texto estáticos? |
+| **Belief** | Creemos que integrar un mapa interactivo dentro de los detalles del reporte mejorará la eficiencia y comprensión del personal SST al no tener que abandonar la plataforma. |
+| **Hypothesis** | Creemos que la integración de un mapa interactivo reducirá el tiempo percibido de ubicación del incidente, aumentando la satisfacción del usuario en la tarea de revisión en al menos un 25% (medible mediante cuestionario de escala Likert). |
+| **Null Hypothesis** | La integración de un mapa interactivo no tendrá ningún impacto significativo en la satisfacción ni en la eficiencia al ubicar incidentes en comparación con un enlace externo. |
+
+**Experiment Card 2: Simplificación de Procesos (Reducción de Clics)**
+
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Cómo afectará la implementación de botones de acción rápida en la vista principal a la productividad general al gestionar reportes de incidentes? |
+| **Belief** | Creemos que permitir cambiar estados directamente desde la lista de incidentes, sin entrar al detalle, agilizará el flujo de trabajo diario. |
+| **Hypothesis** | Creemos que la simplificación del flujo mediante acciones rápidas aumentará la percepción de agilidad de la plataforma en un 30% en los usuarios de prueba. |
+| **Null Hypothesis** | La simplificación del flujo de cambio de estados no generará una diferencia en la percepción de agilidad ni en la productividad de los usuarios de prueba. |
+
+**Experiment Card 3: Auditoría de Layout y Colores (Lighthouse)**
+
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Cuál será el impacto de un rediseño de colores y layout en las métricas de accesibilidad y velocidad de carga evaluadas mediante Lighthouse? |
+| **Belief** | Creemos que la optimización del contraste y la estructura DOM mejorará significativamente el rendimiento técnico y la inclusión visual de la aplicación. |
+| **Hypothesis** | Creemos que el rediseño del layout y esquema de colores incrementará el puntaje de "Accessibility" y "Performance" en Google Lighthouse en al menos 15 puntos porcentuales respecto a la versión inicial. |
+| **Null Hypothesis** | El rediseño del layout y los colores no generará una mejora medible en los puntajes de Lighthouse respecto a la versión original. |
+
+**Experiment Card 4: Reporte de Tasa de Reclamos**
+
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿De qué manera la visualización directa de la tasa de reclamos por accidentes impactará en la satisfacción y eficiencia del personal SST al tomar decisiones preventivas? |
+| **Belief** | Creemos que consolidar esta información en un gráfico evitará cálculos manuales y aportará valor analítico inmediato al usuario. |
+| **Hypothesis** | Creemos que incluir un reporte visual de la tasa de reclamos logrará que al menos el 80% de los usuarios de prueba califiquen el Dashboard como "Muy útil" para sus labores preventivas. |
+| **Null Hypothesis** | La inclusión del reporte de tasa de reclamos no modificará la percepción de utilidad del Dashboard por parte de los usuarios de prueba. |
+
+**Experiment Card 5: Filtros Rápidos de Navegación**
+
+| Elemento | Descripción |
+| :--- | :--- |
+| **Question** | ¿Qué efecto tendrá la adición de filtros rápidos de estado en la página de inicio sobre la navegación del sistema? |
+| **Belief** | Creemos que la adición de tarjetas filtrables (ej. "Incidentes Críticos", "En Proceso") reducirá la fricción al buscar información relevante. |
+| **Hypothesis** | Creemos que la adición de filtros interactivos aumentará la satisfacción del usuario respecto a la navegabilidad de la plataforma en un 20%. |
+| **Null Hypothesis** | La adición de filtros rápidos no tendrá impacto en la satisfacción ni en la percepción de navegabilidad de la plataforma. |
+
+
+
 
 # Conclusiones
 ## Conclusiones y recomendaciones.
