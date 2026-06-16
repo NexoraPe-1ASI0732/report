@@ -80,6 +80,9 @@ COURSE PROJECT
 | 1.4 | 11/05/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se modifico el Product Backlog |
 | 1.5 | 11/05/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se añadieron secciones nuevas de los capitulos |
 | 1.6 | 14/05/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se corrigieron observaciones de la exposición |
+| 1.7 | 12/06/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se añadieron las secciones del capítulo 8 |
+| 1.8 | 14/05/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se verificaron los procesos de experimentacion |
+
 
 ---
 
