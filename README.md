@@ -24,7 +24,7 @@ COURSE PROJECT
 </p>
 
 <p align="center">
-    <strong>Informe de Trabajo Parcial</strong>
+    <strong>Informe de la TB2</strong>
 </p>
 
 <p align="center">
