@@ -2761,48 +2761,48 @@ A continuación se detallan las tarjetas de experimentos diseñadas para validar
 
 **Experiment Card 1: Integración de Geolocalización (Google Maps)**
 
-| Elemento | Descripción |
-| :--- | :--- |
-| **Question** | ¿En qué medida la integración de un mapa interactivo de Google Maps facilitará la ubicación espacial de los incidentes en comparación con el uso de enlaces de texto estáticos? |
-| **Belief** | Creemos que integrar un mapa interactivo dentro de los detalles del reporte mejorará la eficiencia y comprensión del personal SST al no tener que abandonar la plataforma. |
-| **Hypothesis** | Creemos que la integración de un mapa interactivo reducirá el tiempo percibido de ubicación del incidente, aumentando la satisfacción del usuario en la tarea de revisión en al menos un 25% (medible mediante cuestionario de escala Likert). |
-| **Null Hypothesis** | La integración de un mapa interactivo no tendrá ningún impacto significativo en la satisfacción ni en la eficiencia al ubicar incidentes en comparación con un enlace externo. |
+| Elemento       | Descripción                                                                                                                                                                     |
+|:---------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**   | ¿En qué medida la integración de un mapa interactivo de Google Maps facilitará la ubicación espacial de los incidentes en comparación con el uso de enlaces de texto estáticos? |
+| **Why**        | Para determinar si la combinación de herramientas colaborativas y CRM mejora la eficiencia de las actividades diarias.                                                          |
+| **What**       | Medir el tiempo y la cantidad de tareas completadas por los usuarios antes y después de integrar Google Apps con Salesforce.                                                    |
+| **Hypothesis** | Creemos que la integración con Google Apps aumentará la productividad de los usuarios en al menos un 25 %.                                                                      |
 
 **Experiment Card 2: Simplificación de Procesos (Reducción de Clics)**
 
-| Elemento | Descripción |
-| :--- | :--- |
-| **Question** | ¿Cómo afectará la implementación de botones de acción rápida en la vista principal a la productividad general al gestionar reportes de incidentes? |
-| **Belief** | Creemos que permitir cambiar estados directamente desde la lista de incidentes, sin entrar al detalle, agilizará el flujo de trabajo diario. |
-| **Hypothesis** | Creemos que la simplificación del flujo mediante acciones rápidas aumentará la percepción de agilidad de la plataforma en un 30% en los usuarios de prueba. |
-| **Null Hypothesis** | La simplificación del flujo de cambio de estados no generará una diferencia en la percepción de agilidad ni en la productividad de los usuarios de prueba. |
+| Elemento       | Descripción                                                                                                                                                               |
+|:---------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**   | ¿Cómo afectará la implementación de botones de acción rápida en la vista principal a la productividad general al gestionar reportes de incidentes?                        |
+| **Why**        | Para determinar si permitir cambiar estados directamente desde la lista de incidentes agiliza el flujo de trabajo diario del personal SST.                                |
+| **What**       | Comparar mediante pruebas con usuarios el tiempo y número de pasos requeridos para cambiar el estado de un incidente antes y después de implementar las acciones rápidas. |
+| **Hypothesis** | Creemos que la simplificación del flujo mediante acciones rápidas aumentará la percepción de agilidad de la plataforma en un 30% en los usuarios de prueba.               |
 
 **Experiment Card 3: Auditoría de Layout y Colores (Lighthouse)**
 
-| Elemento | Descripción |
-| :--- | :--- |
-| **Question** | ¿Cuál será el impacto de un rediseño de colores y layout en las métricas de accesibilidad y velocidad de carga evaluadas mediante Lighthouse? |
-| **Belief** | Creemos que la optimización del contraste y la estructura DOM mejorará significativamente el rendimiento técnico y la inclusión visual de la aplicación. |
-| **Hypothesis** | Creemos que el rediseño del layout y esquema de colores incrementará el puntaje de "Accessibility" y "Performance" en Google Lighthouse en al menos 15 puntos porcentuales respecto a la versión inicial. |
-| **Null Hypothesis** | El rediseño del layout y los colores no generará una mejora medible en los puntajes de Lighthouse respecto a la versión original. |
+| Elemento       | Descripción                                                                                                                                                                                                                      |
+|:---------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**   | ¿Cuál será el impacto de un rediseño de colores y layout en las métricas de accesibilidad y velocidad de carga evaluadas mediante Lighthouse?                                                                                    |
+| **Why**        | Para evaluar si la optimización del contraste y la estructura visual de la aplicación mejora el rendimiento técnico y la accesibilidad para los usuarios.                                                                        |
+| **What**       | Ejecutar auditorías con Google Lighthouse antes y después del rediseño del layout y esquema de colores, comparando los resultados obtenidos.                                                                                     |
+| **Hypothesis** | Creemos que el rediseño del layout y esquema de colores incrementará el puntaje de "Accessibility" y "Performance" en Google Lighthouse en al menos 15 puntos porcentuales respecto a la versión inicial.                        |
 
 **Experiment Card 4: Reporte de Tasa de Reclamos**
 
-| Elemento | Descripción |
-| :--- | :--- |
-| **Question** | ¿De qué manera la visualización directa de la tasa de reclamos por accidentes impactará en la satisfacción y eficiencia del personal SST al tomar decisiones preventivas? |
-| **Belief** | Creemos que consolidar esta información en un gráfico evitará cálculos manuales y aportará valor analítico inmediato al usuario. |
+| Elemento       | Descripción                                                                                                                                                                              |
+|:---------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**   | ¿De qué manera la visualización directa de la tasa de reclamos por accidentes impactará en la satisfacción y eficiencia del personal SST al tomar decisiones prevent                     |
+| **Why**        | Para validar si la presentación gráfica de la tasa de reclamos facilita el análisis y mejora la toma de decisiones preventivas del personal SST.                                         |
+| **What**       | Presentar el nuevo Dashboard a usuarios de prueba y recopilar su percepción de utilidad y facilidad de interpretación mediante cuestionarios de satisfacción.                            |
 | **Hypothesis** | Creemos que incluir un reporte visual de la tasa de reclamos logrará que al menos el 80% de los usuarios de prueba califiquen el Dashboard como "Muy útil" para sus labores preventivas. |
-| **Null Hypothesis** | La inclusión del reporte de tasa de reclamos no modificará la percepción de utilidad del Dashboard por parte de los usuarios de prueba. |
 
 **Experiment Card 5: Filtros Rápidos de Navegación**
 
-| Elemento | Descripción |
-| :--- | :--- |
-| **Question** | ¿Qué efecto tendrá la adición de filtros rápidos de estado en la página de inicio sobre la navegación del sistema? |
-| **Belief** | Creemos que la adición de tarjetas filtrables (ej. "Incidentes Críticos", "En Proceso") reducirá la fricción al buscar información relevante. |
-| **Hypothesis** | Creemos que la adición de filtros interactivos aumentará la satisfacción del usuario respecto a la navegabilidad de la plataforma en un 20%. |
-| **Null Hypothesis** | La adición de filtros rápidos no tendrá impacto en la satisfacción ni en la percepción de navegabilidad de la plataforma. |
+| Elemento       | Descripción                                                                                                                                                                     |
+|:---------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Question**   | ¿Qué efecto tendrá la adición de filtros rápidos de estado en la página de inicio sobre la navegación del sistema?                                                              |
+| **Why**        | Para determinar si la incorporación de tarjetas filtrables reducirá la dificultad para localizar información relevante dentro del sistema.                                      |
+| **What**       | Evaluar mediante pruebas de navegación el tiempo empleado por los usuarios para localizar reportes críticos antes y después de implementar los filtros rápidos.                 |
+| **Hypothesis** | Creemos que la adición de filtros interactivos aumentará la satisfacción del usuario respecto a la navegabilidad de la plataforma en un 20%.                                    |
 
 ## 8.2. Experiment Design
 
