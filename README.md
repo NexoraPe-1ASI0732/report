@@ -2764,8 +2764,8 @@ A continuación se detallan las tarjetas de experimentos diseñadas para validar
 | Elemento       | Descripción                                                                                                                                                                     |
 |:---------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Question**   | ¿En qué medida la integración de un mapa interactivo de Google Maps facilitará la ubicación espacial de los incidentes en comparación con el uso de enlaces de texto estáticos? |
-| **Why**        | Para determinar si la combinación de herramientas colaborativas y CRM mejora la eficiencia de las actividades diarias.                                                          |
-| **What**       | Medir el tiempo y la cantidad de tareas completadas por los usuarios antes y después de integrar Google Apps con Salesforce.                                                    |
+| **Why**        | Para determinar si la combinación de herramientas colaborativas mejora la eficiencia de las actividades diarias.                                                          |
+| **What**       | Medir el tiempo y la cantidad de tareas completadas por los usuarios antes y después de integrar Google Apps.                                                    |
 | **Hypothesis** | Creemos que la integración con Google Apps aumentará la productividad de los usuarios en al menos un 25 %.                                                                      |
 
 **Experiment Card 2: Simplificación de Procesos (Reducción de Clics)**
