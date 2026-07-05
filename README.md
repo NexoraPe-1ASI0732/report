@@ -2547,6 +2547,26 @@ depuración y contribuye a desarrollar un software confiable y de alta calidad.
 
 ![US23](imgs/cap6/cap6-1-4/us23.png)
 
+## 6.4. Auditoria de Experiencias de Usuario.
+
+### 6.4.1. Auditoria Realizada.
+
+#### 6.4.1.1. Información del grupo Auditado
+
+#### 6.4.1.2. Cronograma de Auditoria Realizada
+
+#### 6.4.1.3. Contenido de Auditoria Realizada
+
+## 6.4.2. Auditoria Recibida
+
+#### 6.4.2.1. Información del Grupo Auditor
+
+#### 6.4.2.2. Cronograma de Auditoria Recibida
+
+#### 6.4.2.3. Contenido de Auditoria Recibida
+
+#### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos
+
 
 # Capítulo VII: DevOps Practices
 
