@@ -1818,12 +1818,12 @@ Se evidencia el avance del Segundo Sprint por medio del siguiente link: https://
 
 Se evidencia la documentación de los servicios empleados:  
 
-JSON SERVER FAKE API:
-https://safeworkapi.azurewebsites.net
+URL DEL BACKEND:
+https://backend-safework.onrender.com
 
 ##### 5.2.2.7. Software Deployment Evidence for Sprint Review.
 
-Link del Frontend: https://delightful-glacier-03ccd4010.1.azurestaticapps.net/
+Link del Frontend: [safework-app-beta.vercel.app](https://safework-app-beta.vercel.app/)
 ![imgs/img.png](imgs/img.png)
 
 ![imgs/img_1.png](imgs/img_1.png)
