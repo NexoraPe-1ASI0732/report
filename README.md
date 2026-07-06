@@ -2789,6 +2789,25 @@ Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
 #### 6.4.2.4. Resumen de modificaciones para subsanar hallazgos
 
+A partir de la auditoría recibida por el equipo evaluador, se priorizaron las correcciones necesarias para garantizar la completitud de las historias de usuario (User Stories) y mejorar la experiencia de usuario (UX) en la plataforma SafeWork. Las modificaciones se abordaron con un enfoque ágil, priorizando los errores de ruteo y las vistas faltantes.
+
+A continuación, se detalla el plan de acción y las modificaciones implementadas para cada hallazgo:
+
+| # Hallazgo | Problema Identificado | Acción Correctiva Implementada | Severidad |
+| :---: | :--- | :--- | :---: |
+| **1** | Error de ruteo al hacer clic en "Forgot your password?" (`NoMatchError`). | Se corrigió el ruteo en el módulo de autenticación (Angular Router). Se añadió una vista simple con un campo de correo y un mensaje *Toast* de confirmación visual al enviar la solicitud. | 4 |
+| **2** | No se encontró la vista de "Historial de reportes" (US16). | Se creó el componente `ReportHistoryComponent` en el perfil del trabajador, integrando una tabla estática que filtra los reportes asociados exclusivamente al ID del usuario en sesión. | 3 |
+| **3** | No está implementada la función "Chat de soporte" (US18). | Se integró un botón flotante (Widget) en la esquina inferior derecha que despliega un modal de chat simulado con respuestas automáticas predefinidas (Mock) para consultas básicas. | 3 |
+| **4** | Falta la función de "Foto de perfil" (US16/US20). | Se añadió un input tipo *file* en el formulario de edición de perfil. Temporalmente, la imagen se convierte a Base64 para simular su carga y actualización en la vista del usuario. | 2 |
+| **5** | Ausencia de la función "Notas internas" en el detalle del caso (US25). | Se agregó un área de texto oculta para trabajadores y visible solo para el rol SST dentro del componente de detalle del incidente. Al guardar, la nota se añade a una lista debajo de la descripción. | 3 |
+| **6** | No se visualiza la "Línea de tiempo del caso" (US26). | Se implementó un componente visual de tipo *Stepper* vertical en el detalle del reporte. Este componente mapea los estados del incidente (Abierto > En Proceso > Cerrado) resaltando el estado actual. | 3 |
+| **7** | Faltan campos para "Actualización de área/departamento" (US32). | Se añadió un campo desplegable (`<select>`) en el formulario de "Editar Perfil" con las áreas predefinidas de la empresa (Ej. Logística, Operaciones, Mantenimiento), vinculando su guardado al perfil del usuario. | 2 |
+| **8** | Inexistencia de "Búsqueda de reportes" (US35). | Se implementó una barra de búsqueda (`<input type="text">`) en la cabecera de la tabla de incidentes. Se utilizó un filtro (Pipe) en Angular para buscar coincidencias dinámicas por título o ID del incidente. | 3 |
+| **9** | Falta búsqueda por palabras clave en "Preguntas Frecuentes" (US37). | Se añadió una barra de búsqueda simple en la vista FAQ que filtra los paneles desplegables (acordeones) en tiempo real, ocultando las preguntas que no coinciden con el texto ingresado. | 2 |
+| **10** | No se puede realizar el "Cambio de contraseña desde el perfil" (US30). | Se agregó un formulario en la sección de seguridad del perfil con los campos "Contraseña actual", "Nueva contraseña" y "Confirmar contraseña", validando localmente que las contraseñas nuevas coincidan antes de simular el envío. | 4 |
+
+**Conclusión de la subsanación:**
+La resolución de estos hallazgos permitió alinear el producto final con el *Product Backlog* originalmente propuesto. Los problemas críticos (Severidad 4), como la recuperación y cambio de contraseñas, fueron atendidos con prioridad alta para devolver el control y la libertad al usuario, cumpliendo así con las heurísticas de usabilidad vulneradas.
 
 # Capítulo VII: DevOps Practices
 
