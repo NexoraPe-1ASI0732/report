@@ -2561,115 +2561,41 @@ depuración y contribuye a desarrollar un software confiable y de alta calidad.
 
 #### 6.4.2.1. Información del Grupo Auditor
 
-    <table>
-      <tbody>
-        <tr>
-            <td><strong>Nombre de la Startup / Grupo auditado</strong></td>
-            <td>NexoraPe</td>
-        </tr>
-        <tr>
-            <td><strong>Nombre del producto / solución</strong></td>
-            <td>SafeWork</td>
-        </tr>
-        <tr>
-            <td><strong>Sitio o App evaluada</strong></td>
-            <td>SafeWork Web app</td>
-        </tr>
-        <tr>
-            <td><strong>Enlace de despliegue (Landing / Web App)</strong></td>
-            <td>https://safework-app-beta.vercel.app/login</td>
-        </tr>
-        <tr>
-            <td><strong>Repositorios de código</strong></td>
-            <td>https://github.com/NexoraPe-1ASI0732</td>
-        </tr>
-        <tr>
-            <td><strong>Integrantes del equipo auditado</strong></td>
-            <td>Cacho Seminario, Diego Alonso<br>Ruiz Huisa, Daniel Elias<br>Palacin Lazo, Gerardo Valentin<br>Villugas Jeronimo, Liam Anderson</td>
-        </tr>
-      </tbody>
-    </table>
+| Campo                                        | Información                                                                                                                     |
+|----------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| **Nombre de la Startup / Grupo auditado**    | NexoraPe                                                                                                                        |
+| **Nombre del producto / solución**           | SafeWork                                                                                                                        |
+| **Sitio o App evaluada**                     | SafeWork Web App                                                                                                                |
+| **Enlace de despliegue (Landing / Web App)** | https://safework-app-beta.vercel.app/login                                                                                      |
+| **Repositorio de código**                    | https://github.com/NexoraPe-1ASI0732                                                                                            |
+| **Integrantes del equipo auditado**          | Cacho Seminario, Diego Alonso<br>Ruiz Huisa, Daniel Elias<br>Palacin Lazo, Gerardo Valentin<br>Villugas Jeronimo, Liam Anderson |
 
 #### 6.4.2.2. Cronograma de Auditoria Recibida
 
-    <table>
-    <thead>
-        <tr>
-            <th>Actividad</th>
-            <th>Fecha</th>
-            <th>Hora</th>
-            <th>Medio (Presencial / Remoto)</th>
-            <th>Participantes</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>Coordinación inicial con el grupo a auditar</td>
-            <td>05/07/2026</td>
-            <td>12 PM</td>
-            <td>Remoto</td>
-            <td>Agromind (equipo)</td>
-        </tr>
-        <tr>
-            <td>Sesión de auditoría (evaluación heurística)</td>
-            <td>05/07/2026</td>
-            <td>3 PM</td>
-            <td>Remoto</td>
-            <td>Agromind (equipo)</td>
-        </tr>
-        <tr>
-            <td>Entrega del informe de auditoría al grupo auditado</td>
-            <td>05/07/2026</td>
-            <td>7 PM</td>
-            <td>Remoto</td>
-            <td>Agromind (equipo)</td>
-        </tr>
-    </tbody>
-    </table>    
+| Actividad                                          | Fecha      | Hora     | Medio (Presencial / Remoto)  | Participantes     |
+|----------------------------------------------------|------------|----------|------------------------------|-------------------|
+| Coordinación inicial con el grupo a auditar        | 05/07/2026 | 12:00 PM | Remoto                       | Agromind (equipo) |
+| Sesión de auditoría (evaluación heurística)        | 05/07/2026 | 3:00 PM  | Remoto                       | Agromind (equipo) |
+| Entrega del informe de auditoría al grupo auditado | 05/07/2026 | 7:00 PM  | Remoto                       | Agromind (equipo) |
 
 #### 6.4.2.3. Contenido de Auditoria Recibida
     
-    Esta sección aplica el formato de **UX Heuristics & Principles Evaluation** (Usability – Inclusive Design – Information Architecture) indicado en el Anexo D, para registrar la evaluación heurística realizada por el equipo sobre el producto del grupo auditado.
+Esta sección aplica el formato de **UX Heuristics & Principles Evaluation** (Usability – Inclusive Design – Information Architecture) indicado en el Anexo D, para registrar la evaluación heurística realizada por el equipo sobre el producto del grupo auditado.
 
-    <table>
-    <tbody>
-        <tr>
-            <td><strong>CARRERA</strong></td>
-            <td>Ingeniería de Software</td>
-        </tr>
-        <tr>
-            <td><strong>CURSO</strong></td>
-            <td>Diseño de Experimentos de Ingeniería de Software</td>
-        </tr>
-        <tr>
-            <td><strong>NRC</strong></td>
-            <td>17820</td>
-        </tr>
-        <tr>
-            <td><strong>PROFESORES</strong></td>
-            <td>Julio Manuel Noriega Melendez</td>
-        </tr>
-        <tr>
-            <td><strong>AUDITOR</strong></td>
-            <td>Agromind</td>
-        </tr>
-        <tr>
-            <td><strong>CLIENTE(S)</strong> (personas que participan en la sesión)</td>
-            <td>Cacho Seminario, Diego Alonso<br>Ruiz Huisa, Daniel Elias<br>Palacin Lazo, Gerardo Valentin<br>Villugas Jeronimo, Liam Anderson</td>
-        </tr>
-    </tbody>
-    </table>
+| Campo                                                 | Información                                                                                                                     |
+|-------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| **CARRERA**                                           | Ingeniería de Software                                                                                                          |
+| **CURSO**                                             | Diseño de Experimentos de Ingeniería de Software                                                                                |
+| **NRC**                                               | 17820                                                                                                                           |
+| **PROFESORES**                                        | Julio Manuel Noriega Melendez                                                                                                   |
+| **AUDITOR**                                           | Agromind                                                                                                                        |
+| **CLIENTE(S)** (personas que participan en la sesión) | Cacho Seminario, Diego Alonso<br>Ruiz Huisa, Daniel Elias<br>Palacin Lazo, Gerardo Valentin<br>Villugas Jeronimo, Liam Anderson |
 
 **SITE o APP A EVALUAR:**
 
-    <table>
-    <tbody>
-        <tr>
-            <td><strong>Nombre de la App</strong></td>
-            <td>SafeWork</td>
-        </tr>
-    </tbody>
-    </table>
+| Campo                | Información  |
+|----------------------|--------------|
+| **Nombre de la App** | SafeWork     |
 
 **TAREAS A EVALUAR:**
 
@@ -2689,107 +2615,27 @@ No están incluidas en esta versión de la evaluación las siguientes tareas:
 
 Los errores serán puntuados tomando en cuenta la siguiente escala de severidad:
 
-    <table>
-    <thead>
-        <tr>
-            <th>Nivel</th>
-            <th>Descripción</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja de cara al siguiente release.</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta.</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.</td>
-        </tr>
-    </tbody>
-    </table>
+| Nivel   | Descripción                                                                                                                                                                          |
+|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **1**   | Problema superficial: puede ser fácilmente superado por el usuario o ocurre con muy poca frecuencia. No necesita ser arreglado a no ser que exista disponibilidad de tiempo.         |
+| **2**   | Problema menor: puede ocurrir un poco más frecuentemente o es un poco más difícil de superar para el usuario. Se le debería asignar una prioridad baja de cara al siguiente release. |
+| **3**   | Problema mayor: ocurre frecuentemente o los usuarios no son capaces de resolverlo. Es importante que sea corregido y se le debe asignar una prioridad alta.                          |
+| **4**   | Problema muy grave: un error de gran impacto que impide al usuario continuar con el uso de la herramienta. Es imperativo que sea corregido antes del lanzamiento.                    |
 
 **TABLA RESUMEN:**
 
-    <table>
-    <thead>
-        <tr>
-            <th>#</th>
-            <th>Problema</th>
-            <th>Escala de severidad</th>
-            <th>Heurística / Principio violado(a)</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>1</td>
-            <td>El botón "Forgot your password?" no funciona.</td>
-            <td>4</td>
-            <td>Prevención de errores / Ayuda a reconocer y recuperarse de errores</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>No está implementada la función "Historial de reportes" (US16).</td>
-            <td>3</td>
-            <td>Visibilidad del estado del sistema</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>No está implementada la función de "Chat de soporte" (US18).</td>
-            <td>3</td>
-            <td>Ayuda y documentación</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>No está implementada la función de "Foto de perfil" (US16).</td>
-            <td>2</td>
-            <td>Reconocimiento antes que recuerdo / Diseño inclusivo</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>No está implementada la función de "Notas internas" en el caso (US25).</td>
-            <td>3</td>
-            <td>Flexibilidad y eficiencia de uso</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>No está implementada la función de "Línea de tiempo del caso" (US26).</td>
-            <td>3</td>
-            <td>Visibilidad del estado del sistema</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>No está implementada la actualización de área/departamento en el perfil (US32).</td>
-            <td>2</td>
-            <td>Control y libertad del usuario</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>No está implementada la búsqueda de reportes (US35).</td>
-            <td>3</td>
-            <td>Flexibilidad y eficiencia de uso / Arquitectura de información</td>
-        </tr>
-        <tr>
-            <td>9</td>
-            <td>No está implementada la búsqueda de preguntas frecuentes por palabras clave (US37).</td>
-            <td>2</td>
-            <td>Ayuda y documentación</td>
-        </tr>
-        <tr>
-            <td>10</td>
-            <td>No está implementado el cambio de contraseña desde el perfil (US30).</td>
-            <td>4</td>
-            <td>Control y libertad del usuario</td>
-        </tr>
-    </tbody>
-    </table>
+| #      | Problema                                                                                | Escala de severidad  | Heurística / Principio violado(a)                                  |
+|--------|-----------------------------------------------------------------------------------------|:--------------------:|--------------------------------------------------------------------|
+| **1**  | El botón **"Forgot your password?"** no funciona.                                       |        **4**         | Prevención de errores / Ayuda a reconocer y recuperarse de errores |
+| **2**  | No está implementada la función **"Historial de reportes" (US16)**.                     |        **3**         | Visibilidad del estado del sistema                                 |
+| **3**  | No está implementada la función de **"Chat de soporte" (US18)**.                        |        **3**         | Ayuda y documentación                                              |
+| **4**  | No está implementada la función de **"Foto de perfil" (US16)**.                         |        **2**         | Reconocimiento antes que recuerdo / Diseño inclusivo               |
+| **5**  | No está implementada la función de **"Notas internas"** en el caso (US25).              |        **3**         | Flexibilidad y eficiencia de uso                                   |
+| **6**  | No está implementada la función de **"Línea de tiempo del caso" (US26)**.               |        **3**         | Visibilidad del estado del sistema                                 |
+| **7**  | No está implementada la actualización de **área/departamento** en el perfil (US32).     |        **2**         | Control y libertad del usuario                                     |
+| **8**  | No está implementada la **búsqueda de reportes (US35)**.                                |        **3**         | Flexibilidad y eficiencia de uso / Arquitectura de información     |
+| **9**  | No está implementada la **búsqueda de preguntas frecuentes por palabras clave (US37)**. |        **2**         | Ayuda y documentación                                              |
+| **10** | No está implementado el **cambio de contraseña desde el perfil (US30)**.                |        **4**         | Control y libertad del usuario                                     |
 
 **DESCRIPCIÓN DE PROBLEMAS:**
 
