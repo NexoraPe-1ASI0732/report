@@ -24,7 +24,7 @@ COURSE PROJECT
 </p>
 
 <p align="center">
-    <strong>Informe de la TB2</strong>
+    <strong>Informe del TF</strong>
 </p>
 
 <p align="center">
@@ -64,7 +64,7 @@ COURSE PROJECT
 </div>
 
 <p align="center">
-    <strong>Junio, 2026</strong>
+    <strong>Julio, 2026</strong>
 </p>
 
 ---
@@ -81,7 +81,9 @@ COURSE PROJECT
 | 1.5 | 11/05/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se añadieron secciones nuevas de los capitulos |
 | 1.6 | 14/05/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se corrigieron observaciones de la exposición |
 | 1.7 | 12/06/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se añadieron las secciones del capítulo 8 |
-| 1.8 | 14/05/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se verificaron los procesos de experimentacion |
+| 1.8 | 14/06/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se verificaron los procesos de experimentacion |
+| 1.9 | 05/07/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se añadieron las secciones de auditoria |
+
 
 
 ---
@@ -2547,15 +2549,54 @@ depuración y contribuye a desarrollar un software confiable y de alta calidad.
 
 ![US23](imgs/cap6/cap6-1-4/us23.png)
 
-## 6.4. Auditoria de Experiencias de Usuario.
+## 6.4. Auditoría de Experiencias de Usuario.
 
-### 6.4.1. Auditoria Realizada.
+### 6.4.1. Auditoría Realizada.
+La presente auditoría interna fue ejecutada con el objetivo de evaluar el cumplimiento de los estándares, la estructura y los requerimientos exigidos en el Enunciado del Proyecto para el grupo asignado.
 
 #### 6.4.1.1. Información del grupo Auditado
+* **Startup Auditada:** FIFUPC
+* **Startup Auditora:** Safework
+* **Producto:** Vivienda Smart
+* **Integrantes del grupo auditado:**
+  * Miranda Ayasta, Rogger Faryd
+  * Vivanco Salazar, Rafael Andres
+  * Tasayco Almonacid, Rafael
+  * Tasayco Osorio, Raul Hiroshi
 
-#### 6.4.1.2. Cronograma de Auditoria Realizada
+#### 6.4.1.2. Cronograma de Auditoría Realizada
 
-#### 6.4.1.3. Contenido de Auditoria Realizada
+| Fecha | Horario | Área / Proceso Auditado | Auditor Responsable |
+| :--- | :--- | :--- | :--- |
+| 01/07/2026 | 15:00 - 15:15 | Reunión de Apertura y Planificación | Equipo SafeWork |
+| 01/07/2026 | 15:15 - 16:00 | Revisión de Cap. I (Introducción) y Cap. II (Requirements) | Villugas Jeronimo, Liam Anderson |
+| 01/07/2026 | 16:00 - 16:45 | Revisión de Cap. III (Req. Specification) y Cap. IV (Product Design) | Palacin Lazo, Gerardo Valentin |
+| 01/07/2026 | 16:45 - 17:30 | Revisión de Cap. V (Implementación y Deployment) | Ruiz Huisa, Daniel Elias |
+| 01/07/2026 | 17:30 - 18:15 | Revisión de Cap. VI (Validation) y Cap VII (DevOps) | Cacho Seminario, Diego Alonso |
+| 01/07/2026 | 18:15 - 18:30 | Reunión de Cierre y Consolidación de Hallazgos | Equipo SafeWork |
+
+#### 6.4.1.3. Contenido de Auditoría Realizada
+Para la clasificación de los hallazgos de auditoría se utilizó la siguiente escala de severidad:
+* **1 (Superficial):** Problema menor de forma o redacción.
+* **2 (Menor):** Observación o desviación puntual.
+* **3 (Mayor):** No conformidad por incumplimiento frecuente de un requisito.
+* **4 (Muy Grave):** No conformidad crítica que afecta el núcleo del trabajo entregado.
+
+| # | Problema Encontrado (Hallazgo) | Escala de Severidad | Requisito / Criterio de la Rúbrica Violado | Clasificación |
+| :---: | :--- | :---: | :--- | :--- |
+| **1** | En la sección de "Registro de Versiones del Informe", se indica a "Todos los miembros del equipo" como autores de las versiones. | 2 | **Estructura del Informe:** "Cada línea de versión debe incluir solo un autor". | No Conformidad |
+| **2** | En la sección "Student Outcome", el equipo sustentó el logro del "ABET-EAC - Student Outcome 7". | 4 | **Logro del curso:** El trabajo debe contribuir al "ABET - EAC - Student Outcome 4: Responsabilidades éticas y profesionales". | No Conformidad Mayor |
+| **3** | En la matriz "Competitive Analysis Landscape", existe información residual (copia y pega) de otro proyecto ("BestFarm, BarnTools, CattleMax"). Además, en la segunda tabla solo se analizan 2 competidores reales (Comparabien y Simuladores Bancarios). | 4 | **Análisis Competitivo:** Se requiere la "identificación y descripción de los principales competidores directos (3 como mínimo)". Evidencia de falta de revisión. | No Conformidad Mayor |
+| **4** | En los "Criterios de Aceptación" de las User Stories, se hace mención a elementos gráficos específicos (ej. "When seleccione el botón 'Generar Simulación'"). | 2 | **User Stories:** "Los criterios de aceptación [...] no deben hacer referencia a detalles de interfaz de usuario". | Observación |
+| **5** | En la sección "Ubiquitous Language", el equipo redactó correctamente los términos del negocio en inglés, acompañados de su equivalente en español entre paréntesis. | N/A | **Ubiquitous Language:** "Los términos deben estar en inglés (puede incluirse adicionalmente el término equivalente en español entre paréntesis)". | Fortaleza |
+| **6** | La sección "To-Be Scenario Mapping" ha sido redactada correctamente en base a las indicaciones dentro del project statement con las correctas filas y columnas. | N/A | **To-Be Scenario Mapping:** Resume el proceso realizado por el equipo y presenta una captura de los To-Be Scenario Mapping elaborados en la herramienta indicada para cada User Persona, incluyendo las filas Phases, Doing, Thinking and Feeling. | Fortaleza |
+| **7** | En la sección "User Stories", el equipo ha desarrollado y seguido las pautas correctamente cumpliendo con la plantilla encasillando cada story en su respectiva Epic. | N/A | **User Stories:** En esta sección el equipo redacta una introducción y presenta un cuadro con la estructura especificada a continuación. Solo se elabora un cuadro para todo el conjunto de Epics/Stories. | Fortaleza |
+| **8** | La sección "Product Backlog" se desarrolló siguiendo las pautas de la rúbrica aplicando la plantilla así como designar los story points a cada user story. | N/A | **Product Backlog:** Los User Stories deben incluir su estimación y priorización en el Product Backlog. Debe utilizar la herramienta indicada para el Product Backlog. | Fortaleza |
+| **9** | La sección "Impact Mapping" fue desarrollada parcialmente debido a que la columna User Story no siguieron el formato completo de "Como...Deseo... Para", siendo la última parte del formato omitida. | 3 | **Impact Mapping:** La elaboración incluye la identificación de los Business Goals, Actor/Persona, Impact, Deliverables, User Story siguiendo para cada columna los formatos respectivos. | No conformidad |
+| **10** | En la sección "Style Guidelines", el equipo ha desarrollado correctamente los requisitos. | N/A | **Style Guidelines:** Aquí se explica las decisiones y referencias visuales sobre conceptos generales básicos como Branding, Typography, Colors y Spacing, así como las dimensiones a adoptar para el tono de comunicación y lenguaje aplicado (Divertido/Serio, Formal/Casual, Respetuoso/Irreverente, Entusiasta/Sereno). | Fortaleza |
+| **11** | La sección de Information Architecture fue realizada acorde al project statement y no se detectó alguna anormalidad. | N/A | **Information Architecture:** En esta sección el equipo plantea las decisiones y sustento que dirigen la manera cómo se organizará el contenido en las experiencias web y móvil, incluyendo el Landing Page y las Aplicaciones. Se incluyen los Organization Systems, Labeling Systems, Navigation Systems y Searching Systems. | Fortaleza |
+| **12** | Los productos como el diseño del landing page, Web application y la visualización del prototipo muestran un correcto despliegue de los entregables, cumpliendo lo establecido en el project statement. | N/A | **UX/UI Design:** En esta sección el equipo elabora la propuesta de Ul para el Landing Page, Web Application y Prototyping y cómo traduce las decisiones de diseño y arquitectura de información. | Fortaleza |
+| **13** | Los productos que representan la arquitectura C4 se ven detallados explicando a través de diagramas las normativas y condiciones comerciales a tener en cuenta dentro del proyecto. | N/A | **Arquitectura C4:** Respetar estrictamente su estructura jerárquica de cuatro niveles (Contexto, Contenedores, Componentes y Código), asegurando que cada nivel detalle progresivamente al anterior sin mezclar abstracciones. | Fortaleza |
 
 ## 6.4.2. Auditoria Recibida
 
