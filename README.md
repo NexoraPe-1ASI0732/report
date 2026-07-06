@@ -289,6 +289,16 @@ COURSE PROJECT
     - [6.1.2. Core Integration Tests.](#612-core-integration-tests)
     - [6.1.3. Core Behavior-Driven Development.](#613-core-behavior-driven-development)
     - [6.1.4. Core System Tests.](#614-core-system-tests)
+  - [6.4. Auditoría de Experiencias de Usuario](#64-auditoría-de-experiencias-de-usuario)
+    - [6.4.1. Auditoría realizada.](#641-auditoría-realizada)
+      - [6.4.1.1. Información del grupo auditado.](#6411-información-del-grupo-auditado)
+      - [6.4.1.2. Cronograma de auditoría realizada.](#6412-cronograma-de-auditoría-realizada)
+      - [6.4.1.3. Contenido de auditoría realizada.](#6413-contenido-de-auditoría-realizada)
+    - [6.4.2. Auditoría recibida.](#642-auditoría-recibida)
+      - [6.4.2.1. Información del grupo auditor.](#6421-información-del-grupo-auditor)
+      - [6.4.2.2. Cronograma de auditoría recibida.](#6422-cronograma-de-auditoría-recibida)
+      - [6.4.2.3. Contenido de auditoría recibida.](#6423-contenido-de-auditoría-recibida)
+      - [6.4.2.4. Resumen de modificaciones para subsanar hallazgos.](#6424-resumen-de-modificaciones-para-subsanar-hallazgos)
 - [Capítulo VII: DevOps Practices](#capítulo-vii-devops-practices)
   - [7.1. Continuous Integration.](#71-continuous-integration)
     - [7.1.1. Tools and Practices.](#711-tools-and-practices)
@@ -2549,12 +2559,12 @@ depuración y contribuye a desarrollar un software confiable y de alta calidad.
 
 ![US23](imgs/cap6/cap6-1-4/us23.png)
 
-## 6.4. Auditoría de Experiencias de Usuario.
+## 6.4. Auditoría de Experiencias de Usuario
 
-### 6.4.1. Auditoría Realizada.
+### 6.4.1. Auditoría realizada.
 La presente auditoría interna fue ejecutada con el objetivo de evaluar el cumplimiento de los estándares, la estructura y los requerimientos exigidos en el Enunciado del Proyecto para el grupo asignado.
 
-#### 6.4.1.1. Información del grupo Auditado
+#### 6.4.1.1. Información del grupo auditado.
 * **Startup Auditada:** FIFUPC
 * **Startup Auditora:** Safework
 * **Producto:** Vivienda Smart
@@ -2564,7 +2574,7 @@ La presente auditoría interna fue ejecutada con el objetivo de evaluar el cumpl
   * Tasayco Almonacid, Rafael
   * Tasayco Osorio, Raul Hiroshi
 
-#### 6.4.1.2. Cronograma de Auditoría Realizada
+#### 6.4.1.2. Cronograma de auditoría realizada.
 
 | Fecha | Horario | Área / Proceso Auditado | Auditor Responsable |
 | :--- | :--- | :--- | :--- |
@@ -2575,7 +2585,7 @@ La presente auditoría interna fue ejecutada con el objetivo de evaluar el cumpl
 | 01/07/2026 | 17:30 - 18:15 | Revisión de Cap. VI (Validation) y Cap VII (DevOps) | Cacho Seminario, Diego Alonso |
 | 01/07/2026 | 18:15 - 18:30 | Reunión de Cierre y Consolidación de Hallazgos | Equipo SafeWork |
 
-#### 6.4.1.3. Contenido de Auditoría Realizada
+#### 6.4.1.3. Contenido de auditoría realizada.
 Para la clasificación de los hallazgos de auditoría se utilizó la siguiente escala de severidad:
 * **1 (Superficial):** Problema menor de forma o redacción.
 * **2 (Menor):** Observación o desviación puntual.
@@ -2598,7 +2608,7 @@ Para la clasificación de los hallazgos de auditoría se utilizó la siguiente e
 | **12** | Los productos como el diseño del landing page, Web application y la visualización del prototipo muestran un correcto despliegue de los entregables, cumpliendo lo establecido en el project statement. | N/A | **UX/UI Design:** En esta sección el equipo elabora la propuesta de Ul para el Landing Page, Web Application y Prototyping y cómo traduce las decisiones de diseño y arquitectura de información. | Fortaleza |
 | **13** | Los productos que representan la arquitectura C4 se ven detallados explicando a través de diagramas las normativas y condiciones comerciales a tener en cuenta dentro del proyecto. | N/A | **Arquitectura C4:** Respetar estrictamente su estructura jerárquica de cuatro niveles (Contexto, Contenedores, Componentes y Código), asegurando que cada nivel detalle progresivamente al anterior sin mezclar abstracciones. | Fortaleza |
 
-## 6.4.2. Auditoria Recibida
+## 6.4.2. Auditoría recibida.
 
 #### 6.4.2.1. Información del Grupo Auditor
 
@@ -2611,7 +2621,7 @@ Para la clasificación de los hallazgos de auditoría se utilizó la siguiente e
 | **Repositorio de código**                    | https://github.com/NexoraPe-1ASI0732                                                                                            |
 | **Integrantes del equipo auditado**          | Cacho Seminario, Diego Alonso<br>Ruiz Huisa, Daniel Elias<br>Palacin Lazo, Gerardo Valentin<br>Villugas Jeronimo, Liam Anderson |
 
-#### 6.4.2.2. Cronograma de Auditoria Recibida
+#### 6.4.2.2. Cronograma de auditoría recibida.
 
 | Actividad                                          | Fecha      | Hora     | Medio (Presencial / Remoto)  | Participantes     |
 |----------------------------------------------------|------------|----------|------------------------------|-------------------|
@@ -2619,7 +2629,7 @@ Para la clasificación de los hallazgos de auditoría se utilizó la siguiente e
 | Sesión de auditoría (evaluación heurística)        | 05/07/2026 | 3:00 PM  | Remoto                       | Agromind (equipo) |
 | Entrega del informe de auditoría al grupo auditado | 05/07/2026 | 7:00 PM  | Remoto                       | Agromind (equipo) |
 
-#### 6.4.2.3. Contenido de Auditoria Recibida
+#### 6.4.2.3. Contenido de auditoría recibida.
     
 Esta sección aplica el formato de **UX Heuristics & Principles Evaluation** (Usability – Inclusive Design – Information Architecture) indicado en el Anexo D, para registrar la evaluación heurística realizada por el equipo sobre el producto del grupo auditado.
 
