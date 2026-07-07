@@ -3360,7 +3360,7 @@ A continuación, se presentan los resultados obtenidos de la encuesta y las audi
 * **Pregunta 7:** ¿Los botones de filtros rápidos (ej. "Críticos", "Abiertos") en la página de inicio hicieron que su búsqueda de información fuera más intuitiva?
     * **Opciones:** Sí / No.
     * *\[Insertar imagen del gráfico de Google Forms para Pregunta 7]*
-* **Interpretación:** Solo el 55% de los usuarios respondió afirmativamente. Al conversar con los usuarios durante las pruebas, indicaron que aunque los filtros son útiles, ocupan demasiado espacio en pantalla y a veces confunden si se seleccionan múltiples a la vez. No se logró la meta de mejora del 20% en satisfacción respecto a la navegación.
+* **Interpretación:** Solo el 60% de los usuarios respondió afirmativamente. Al conversar con los usuarios durante las pruebas, indicaron que aunque los filtros son útiles, ocupan demasiado espacio en pantalla y a veces confunden si se seleccionan múltiples a la vez. No se logró la meta de mejora del 20% en satisfacción respecto a la navegación.
 * **Conclusión:** **HIPÓTESIS RECHAZADA.** La funcionalidad actual no justifica su paso a Producción. **Se mantendrá en fase de Experimentación** para rediseñar la UI de los filtros en un futuro Sprint.
 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog
