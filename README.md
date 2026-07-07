@@ -2975,6 +2975,42 @@ Los escenarios definidos mediante archivos `.feature` utilizando Cucumber/Gherki
 #### 5. Corrección Continua de Errores
 Durante el desarrollo y las pruebas automatizadas, se identificaron y corrigieron errores detectados en compilación, ejecución y validación funcional, permitiendo mejorar continuamente la estabilidad del sistema.
 
+## 7.4. Continuous Monitoring
+
+El monitoreo continuo es una práctica clave dentro del ciclo de vida DevOps de SafeWork, ya que nos permite garantizar la alta disponibilidad del sistema, la eficiencia en la gestión de incidentes y comprender el comportamiento de la plataforma bajo cargas de trabajo reales.
+
+### 7.4.1. Tools and Practices
+
+Para llevar a cabo un monitoreo continuo y eficaz de nuestra aplicación web y de los servicios backend, el equipo de SafeWork emplea las siguientes herramientas y prácticas:
+
+*   **Auditorías de Calidad Web y Experiencia del Usuario:** Utilizamos **Google Lighthouse** para auditar continuamente la calidad del frontend (Angular) alojado en Azure. Lighthouse nos permite medir el rendimiento (Performance), la accesibilidad, las mejores prácticas y el SEO de la plataforma. Para complementar esto, utilizamos **Catchpoint**, que nos brinda telemetría avanzada sobre la experiencia digital del usuario final, midiendo latencias de red, disponibilidad y tiempos de respuesta desde distintas ubicaciones geográficas.
+*   **Pruebas de Carga y Estrés:** Implementamos **Redline13** (apoyado por scripts de Apache JMeter) para simular escenarios de alta concurrencia. Dado que un incidente grave en una fábrica podría generar múltiples reportes simultáneos, estas pruebas aseguran que nuestra API en Spring Boot mantenga tiempos de respuesta óptimos bajo estrés.
+*   **Inteligencia Competitiva y Tráfico:** Empleamos **Similarweb** para monitorear tendencias de tráfico y adopción de la plataforma en comparación con soluciones competidoras en el mercado de seguridad laboral (SST). Esto nos permite entender el comportamiento del mercado y ajustar nuestras estrategias de retención.
+*   **Supervisión de APIs:** Utilizamos **Postman** (monitores automatizados) y **Pingdom** para realizar *health checks* (verificaciones de salud) constantes sobre nuestros endpoints RESTful desplegados en Render/Railway, asegurándonos de que los servicios de autenticación, creación de reportes y notificaciones estén siempre activos.
+
+### 7.4.2. Monitoring Pipeline Components
+
+Un pipeline de monitoreo constante integra diversas etapas que ayudan a mantener la calidad y el rendimiento de SafeWork. Estas etapas incluyen la recopilación de datos, el análisis y la visualización post-despliegue. 
+
+*   **Monitoreo Frontend (Lighthouse & Catchpoint):** Inmediatamente después de que GitHub Actions despliega una nueva versión del frontend en Azure Static Web Apps, el pipeline dispara una auditoría de **Google Lighthouse**. Si métricas vitales como el *First Contentful Paint (FCP)* o la accesibilidad disminuyen por debajo del umbral aceptado, se marca como una alerta de calidad. Paralelamente, **Catchpoint** vigila la latencia en tiempo real, ayudando a detectar problemas en la entrega de contenido a los usuarios finales.
+*   **Monitoreo de Carga Backend (Redline13):** De manera periódica, el pipeline ejecuta pruebas de carga utilizando **Redline13** contra el entorno de *Staging*. Estas pruebas simulan a decenas de trabajadores enviando reportes de incidentes con archivos adjuntos al mismo tiempo, permitiéndonos identificar cuellos de botella en la base de datos o en los servicios de Spring Boot antes de que afecten la producción.
+
+### 7.4.3. Alerting Pipeline Components
+
+El componente de alertas en un pipeline de monitoreo es crucial para la detección y respuesta rápida ante caídas de servicio o problemas de rendimiento de SafeWork. Este sistema permite que el personal técnico sea notificado de inmediato cuando ocurren eventos críticos, como fallos al subir reportes o problemas de conexión a la base de datos.
+
+Para implementar este sistema de alertas eficazmente en el entorno de SafeWork, se integran las siguientes herramientas:
+
+*   **Prometheus con Alertmanager:** **Prometheus** se encarga de extraer métricas en tiempo real directamente de nuestra API en Spring Boot (a través de *Spring Boot Actuator*). Mide el consumo de CPU, memoria y tasas de error HTTP (ej. errores 500). Cuando los valores superan los umbrales configurados, genera alertas. Estas alertas se envían a **Alertmanager**, que gestiona, agrupa y redirige las notificaciones a los canales correctos del equipo de desarrollo, evitando la saturación de mensajes y priorizando incidentes críticos (como la caída del servicio de notificaciones).
+*   **Grafana:** Funciona como nuestra capa de visualización de métricas. Se integra de manera nativa con Prometheus para ofrecer *dashboards* (paneles visuales) en vivo. Grafana nos permite visualizar de forma intuitiva los picos de uso del sistema y configurar alertas visuales adicionales si detectamos patrones anómalos en el registro de incidentes laborales.
+
+### 7.4.4. Notification Pipeline Components
+
+El pipeline de notificaciones es esencial para comunicar de forma automatizada los resultados de las integraciones, despliegues y auditorías de rendimiento. 
+
+En SafeWork, el motor central de este proceso es **GitHub Actions**. Aprovechamos sus *workflows* para enviar notificaciones automáticas al equipo. Si una compilación de Angular falla, si los tests de Selenium no pasan, o si la auditoría de Google Lighthouse detecta una caída severa en el rendimiento, GitHub Actions dispara alertas instantáneas a través de integraciones con correo electrónico y canales de comunicación del equipo (como Discord o Slack). Esto garantiza una total transparencia sobre el estado de la calidad del software en cada iteración y facilita la corrección inmediata de errores.
+
+
 # Capítulo VIII: Experiment-Driven Development
 
 ## 8.1. Experiment Planning
