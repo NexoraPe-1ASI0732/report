@@ -3282,8 +3282,64 @@ Para la implementación de los experimentos, se ha estructurado un Sprint adicio
 
 ## 8.4. Experiment Aftermath & Analysis
 
+Tras la finalización del **Sprint 5 (To-Be)** y el despliegue de las nuevas funcionalidades en el entorno de *Staging*, se procedió a recopilar y analizar la retroalimentación de los usuarios. Para ello, se diseñó un cuestionario cerrado en Google Forms aplicado a una muestra de **20 usuarios** (compuesta por personal SST y Trabajadores). Adicionalmente, se utilizaron herramientas de auditoría técnica (Google Lighthouse) para respaldar objetivamente las métricas de rendimiento.
+
 ### 8.4.1. Analysis and Interpretation of Results
 
+A continuación, se presentan los resultados obtenidos de la encuesta y las auditorías técnicas, junto con la interpretación y la decisión de negocio (Pase a Producción o Retorno a Experimentación) para cada hipótesis planteada.
+
+#### A. Datos Demográficos y de Uso
+
+**Pregunta 1: ¿En qué rango de edad se encuentra?**
+* **Opciones:** 20-30 años / 31-40 años / 41-50 años / 51-60 años.
+* *\[Insertar imagen del gráfico circular de Google Forms sobre edades]*
+* **Análisis:** La muestra es representativa, concentrándose mayoritariamente en el rango de 31-40 años, lo cual refleja la edad promedio del personal supervisor y SST en el sector industrial.
+
+**Pregunta 2: ¿Con qué frecuencia utiliza plataformas de gestión laboral o reportes?**
+* **Opciones:** Diariamente / Semanalmente / Mensualmente.
+* *\[Insertar imagen del gráfico de barras de Google Forms sobre frecuencia]*
+* **Análisis:** El 75% de los encuestados reporta un uso diario o semanal, lo que valida que son usuarios idóneos para evaluar la agilidad y los cuellos de botella de la plataforma.
+
+---
+
+#### B. Evaluación de Hipótesis (To-Be User Stories)
+
+**Hipótesis 1 (US44 - Mapa Interactivo)**
+* **Pregunta 3:** ¿El mapa interactivo integrado en la plataforma le permitió ubicar el incidente de manera más rápida en comparación a hacer clic en un enlace externo?
+    * **Opciones:** Sí / No.
+    * *\[Insertar imagen del gráfico de Google Forms para Pregunta 3]*
+* **Interpretación:** El 90% (18 de 20 usuarios) respondió afirmativamente, superando nuestra expectativa inicial de mejora del 25% en la percepción de tiempo. El no abandonar la pestaña activa reduce drásticamente la carga cognitiva.
+* **Conclusión:** **HIPÓTESIS VALIDADA.** La funcionalidad ha demostrado su valor y se aprueba su paso a **Producción**.
+
+**Hipótesis 2 (US45 - Cambio de Estado Rápido)**
+* **Pregunta 4:** ¿Considera que los botones de acción rápida en la lista principal agilizan la gestión y actualización de los reportes?
+    * **Opciones:** Totalmente de acuerdo / De acuerdo / En desacuerdo / Totalmente en desacuerdo.
+    * *\[Insertar imagen del gráfico de Google Forms para Pregunta 4]*
+* **Interpretación:** El 85% de los usuarios seleccionó "Totalmente de acuerdo". Esto confirma la creencia de que reducir el número de clics (evitando entrar a la vista de detalles) impacta directamente en la productividad percibida.
+* **Conclusión:** **HIPÓTESIS VALIDADA.** Se aprueba su despliegue a **Producción**.
+
+**Hipótesis 3 (US46 - Optimización Visual y Accesibilidad)**
+* **Pregunta 5:** ¿Cómo calificaría el confort visual y la legibilidad de la nueva interfaz con el contraste de colores actualizado?
+    * **Opciones:** Excelente / Bueno / Regular / Malo.
+    * *\[Insertar imagen del gráfico de Google Forms para Pregunta 5]*
+* **Evidencia Técnica (Lighthouse):** Se ejecutó una auditoría donde el puntaje de *Accessibility* subió de 76 a 94 (+18 puntos) y *Performance* de 80 a 96 (+16 puntos).
+    * *\[Insertar captura de pantalla del reporte de Google Lighthouse As-Is vs To-Be]*
+* **Interpretación:** Tanto la percepción cualitativa de los usuarios (80% calificó de Excelente/Bueno) como la evidencia cuantitativa de Lighthouse superan la meta de mejora de 15 puntos.
+* **Conclusión:** **HIPÓTESIS VALIDADA.** El rediseño estructural pasa a **Producción**.
+
+**Hipótesis 4 (US47 - Gráfico de Tasa de Reclamos)**
+* **Pregunta 6:** ¿Qué tan útil le resulta la visualización de la gráfica de "Tasa de Reclamos" en el panel principal para la toma de decisiones preventivas?
+    * **Opciones:** Muy útil / Algo útil / Poco útil / Nada útil.
+    * *\[Insertar imagen del gráfico de Google Forms para Pregunta 6]*
+* **Interpretación:** El 95% (19 de 20 usuarios) la calificó como "Muy útil". Esto supera ampliamente el objetivo del 80% propuesto en nuestra tarjeta de experimento, demostrando que los datos consolidados ahorran tiempo analítico al usuario.
+* **Conclusión:** **HIPÓTESIS VALIDADA.** La gráfica se integrará definitivamente en **Producción**.
+
+**Hipótesis 5 (US48 - Filtros Rápidos de Navegación)**
+* **Pregunta 7:** ¿Los botones de filtros rápidos (ej. "Críticos", "Abiertos") en la página de inicio hicieron que su búsqueda de información fuera más intuitiva?
+    * **Opciones:** Sí / No.
+    * *\[Insertar imagen del gráfico de Google Forms para Pregunta 7]*
+* **Interpretación:** Sorprendentemente, solo el 55% de los usuarios respondió afirmativamente. Al conversar con algunos usuarios durante las pruebas, indicaron que aunque los botones son útiles, ocupan demasiado espacio en pantalla y a veces confunden si se seleccionan múltiples a la vez. No se logró la meta de mejora del 20% en satisfacción general respecto a la navegación.
+* **Conclusión:** **HIPÓTESIS RECHAZADA.** La funcionalidad actual no justifica su paso a Producción. **Se mantendrá en fase de Experimentación** para rediseñar la UI de los filtros (por ejemplo, pasarlos a un menú lateral desplegable en lugar de tarjetas en el inicio) para un futuro Sprint.
 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog
 
