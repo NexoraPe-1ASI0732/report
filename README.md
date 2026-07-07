@@ -3235,6 +3235,69 @@ Las nuevas historias de usuario han sido estimadas utilizando la secuencia de Fi
 | 04 | US04 | Gráfico de Tasa de Reclamos | Como personal SST, deseo visualizar un gráfico resumen con la tasa de reclamos por accidentes en el Dashboard principal para tomar decisiones preventivas rápidas. | 5 |
 | 05 | US05 | Filtros Rápidos de Navegación | Como personal SST, deseo utilizar botones de filtros rápidos en la página de inicio (ej. "Ver Críticos", "Ver Abiertos") para segmentar mi vista de trabajo de forma inmediata. | 2 |
 
+### 8.3.3. Pipeline-supported, Experiment-Driven To-Be Software Platform Lifecycle
+
+El ciclo de vida de la plataforma "To-Be" de SafeWork se apoya íntegramente en las prácticas y herramientas DevOps definidas en el Capítulo VII. Para garantizar que los experimentos (nuevas funcionalidades de la Épica EP14) se desarrollen, prueben y desplieguen de forma segura y ágil, nos basamos en nuestro pipeline de CI/CD:
+
+1. **Desarrollo iterativo (Feature Branches):** Cada experimento (ej. Integración de Google Maps, Gráfica de Reclamos) se desarrolla en una rama independiente (`feature/experiment-maps`).
+2. **Validación Automática (CI):** Al crear un Pull Request hacia la rama `develop`, GitHub Actions ejecuta automáticamente las pruebas unitarias (JUnit, Jasmine) y valida la calidad del código, asegurando que las nuevas implementaciones no rompan las funcionalidades *As-Is* (regresión).
+3. **Despliegue Continuo (CD):** Una vez aprobados los cambios, el pipeline despliega automáticamente el Backend en Render/Railway y el Frontend en Azure, dejándolos listos en un entorno de *Staging*.
+4. **Monitoreo y Auditoría:** Inmediatamente después del despliegue, herramientas como Google Lighthouse auditan el rendimiento y la accesibilidad de las nuevas vistas experimentales, confirmando si las hipótesis técnicas se cumplen.
+
+#### 8.3.3.1. To-Be Sprint Backlogs
+
+Para la implementación de los experimentos, se ha estructurado un Sprint adicional enfocado exclusivamente en las mejoras de experiencia de usuario y validación de hipótesis.
+
+**Sprint 5: To-Be Experimental Features**
+* **Objetivo del Sprint:** Implementar y desplegar las 5 historias de usuario experimentales (EP14) para medir su impacto en la productividad y satisfacción del personal SST mediante entrevistas de validación.
+* **Duración:** 1 semana.
+
+| # | Epic / Story ID | Título de la Historia de Usuario | Story Points | Estado (To Do / In Progress / Done) |
+| :---: | :---: | :--- | :---: | :--- |
+| 1 | **US44** | Integración de Mapa Interactivo | 5 | To Do |
+| 2 | **US45** | Cambio de Estado Rápido | 3 | To Do |
+| 3 | **US46** | Optimización Visual y Accesibilidad | 3 | To Do |
+| 4 | **US47** | Gráfico de Tasa de Reclamos | 5 | To Do |
+| 5 | **US48** | Filtros Rápidos de Navegación | 2 | To Do |
+
+#### 8.3.3.2. Implemented To-Be Landing Page Evidence
+
+
+#### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
+
+
+#### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
+
+
+#### 8.3.3.6. Team Collaboration Insights
+
+
+### 8.3.4. To-Be Validation Interviews
+
+#### 8.3.4.1. Diseño de Entrevistas.
+
+
+#### 8.3.4.2. Registro de Entrevistas.
+
+
+## 8.4. Experiment Aftermath & Analysis
+
+### 8.4.1. Analysis and Interpretation of Results
+
+
+### 8.4.2. Re-scored and Re-prioritized Question Backlog
+
+
+## 8.5. Continuous Learning
+
+### 8.5.1. Shareback Session Artifacts: Learning Workflow
+
+
+## 8.6. To-Be Software Platform Pre-launch
+
+### 8.6.1. About-the-Product Intro Video
+
+
 # Conclusiones
 ## Conclusiones y recomendaciones.
 
