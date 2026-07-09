@@ -3341,7 +3341,7 @@ A continuación, se presentan los resultados obtenidos del formulario y las audi
 * **Pregunta 5:** ¿Cómo calificaría el confort visual y la legibilidad de la nueva interfaz con el contraste de colores actualizado?
     * **Opciones:** Excelente / Bueno / Regular / Malo.
      ![Resultado Optimización Visual](imgs/cap8/pregunta5form.png)
-* **Evidencia Técnica (Lighthouse):** Se ejecutó una auditoría donde el puntaje de *Accessibility* subió de 76 a 94 (+18 puntos) y *Performance* de 80 a 96 (+16 puntos).
+* **Evidencia Técnica (Lighthouse):** Se ejecutó una auditoría donde el puntaje de *Accessibility* subió de 76 a 94 (+18 puntos) y *Performance* de 80 a 99 (+19 puntos).
      ![Reporte Lighthouse](imgs/cap8/pregunta5lighthouse.png)
 * **Interpretación:** Tanto la percepción cualitativa de los usuarios (80% calificó de Excelente/Bueno) como la evidencia cuantitativa de Lighthouse superan la meta de mejora de 15 puntos.
 * **Conclusión:** **HIPÓTESIS VALIDADA.** El rediseño estructural pasa a **Producción**.
