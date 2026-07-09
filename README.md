@@ -3367,6 +3367,84 @@ A continuación, se presentan los resultados obtenidos del formulario y las audi
 
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow
 
+Al finalizar la fase de experimentación, el equipo de **SafeWork** realizó una sesión de *Shareback*: un espacio de retrospectiva donde se presentan todos los resultados obtenidos en el formulario de validación y en las auditorías técnicas. 
+
+El objetivo de esta sesión no es solo comunicar si una hipótesis fue validada o rechazada, sino transformar cada resultado en un **aprendizaje accionable** que alimente el *backlog* de producto y las decisiones de las siguientes iteraciones.
+
+Para estandarizar este proceso, cada hipótesis evaluada se documentó mediante una **Learning Card**, que resume el aprendizaje obtenido y la decisión tomada respecto a su continuidad.
+
+---
+
+#### 📋 Learning Cards
+
+##### Learning Card 1 — Integración de Mapa Interactivo (US01)
+
+| Elemento | Descripción |
+| :--- | :--- |
+| **Hypothesis Tested** | Creemos que la integración de un mapa interactivo reducirá el tiempo percibido de ubicación del incidente, aumentando la satisfacción del usuario en al menos un 25%. |
+| **Result** | **Validada** (90% de respuestas afirmativas). |
+| **Learning** | Eliminar la dependencia de enlaces externos reduce significativamente la carga cognitiva del personal SST; la geolocalización nativa es percibida como un requisito básico, no como un "extra". |
+| **Decision** | Escalar a Producción de forma permanente. |
+| **Next Action** | Monitorear en producción el tiempo real de localización mediante analítica web (ver 8.2.8). |
+
+<br>
+
+##### Learning Card 2 — Cambio de Estado Rápido (US02)
+
+| Elemento | Descripción |
+| :--- | :--- |
+| **Hypothesis Tested** | Creemos que la simplificación del flujo mediante acciones rápidas aumentará la percepción de agilidad en un 30%. |
+| **Result** | **Validada** (85% "Totalmente de acuerdo"). |
+| **Learning** | Reducir el número de clics en tareas repetitivas tiene un impacto directo y medible en la productividad percibida; los usuarios valoran más la eficiencia operativa que las opciones granulares de control. |
+| **Decision** | Escalar a Producción. |
+| **Next Action** | Explorar acciones rápidas adicionales (p. ej. reasignación de casos) en un próximo Sprint. |
+
+<br>
+
+##### Learning Card 3 — Optimización Visual y Accesibilidad (US03)
+
+| Elemento | Descripción |
+| :--- | :--- |
+| **Hypothesis Tested** | Creemos que el rediseño del layout y esquema de colores incrementará los puntajes de *Accessibility* y *Performance* en Lighthouse en al menos 15 puntos. |
+| **Result** | **Validada** (+18 pts. Accessibility, +19 pts. Performance). |
+| **Learning** | La inversión en fundamentos técnicos (contraste, estructura del DOM) genera mejoras que superan la meta inicial, confirmando que la deuda de accesibilidad tenía un costo de UX mayor al estimado. |
+| **Decision** | El rediseño estructural pasa a Producción de forma definitiva. |
+| **Next Action** | Establecer auditorías Lighthouse recurrentes como parte del pipeline de CI/CD. |
+
+<br>
+
+##### Learning Card 4 — Gráfico de Tasa de Reclamos (US04)
+
+| Elemento | Descripción |
+| :--- | :--- |
+| **Hypothesis Tested** | Creemos que incluir un reporte visual de la tasa de reclamos logrará que al menos el 80% de los usuarios califique el Dashboard como "Muy útil". |
+| **Result** | **Validada** (95% "Muy útil"). |
+| **Learning** | Consolidar datos que antes requerían exportación o cálculo manual entrega un valor analítico inmediato y de alta percepción para el usuario SST. |
+| **Decision** | Integrar la gráfica de forma definitiva en Producción. |
+| **Next Action** | Evaluar la incorporación de filtros temporales (mensual/anual) sobre esta misma gráfica. |
+
+<br>
+
+##### Learning Card 5 — Filtros Rápidos de Navegación (US05)
+
+| Elemento | Descripción |
+| :--- | :--- |
+| **Hypothesis Tested** | Creemos que la implementación de filtros rápidos de estado aumentará la satisfacción sobre la navegabilidad en un 20%. |
+| **Result** | ❌ **Rechazada** (60% de aprobación, por debajo de la meta del 80%). |
+| **Learning** | El feedback cualitativo reveló que el problema no era la ausencia de filtros, sino su implementación visual: los botones ocupan demasiado espacio y generan confusión al combinar criterios. La hipótesis de fondo (facilitar la navegación) no fue descartada, solo la solución de UI propuesta. |
+| **Decision** | No pasa a Producción en su forma actual; regresa a fase de Experimentación. |
+| **Next Action** | Rediseñar la UI de filtros (p. ej. formato de chips colapsables o menú desplegable) y re-testear en el próximo Sprint. |
+
+---
+
+#### Flujo de aprendizaje (*Learning Workflow*)
+
+Estas cinco tarjetas evidencian el flujo de aprendizaje continuo del equipo: cada resultado —validado o rechazado— se traduce en una acción concreta sobre el producto. 
+
+* **Hipótesis validadas (US01, US02, US03, US04):** Se consolidan como funcionalidades definitivas del *To-Be Product Backlog*.
+* **Hipótesis rechazada (US05):** No se descarta, sino que retroalimenta directamente la sección *Re-scored and Re-prioritized Question Backlog*, donde el equipo la re-prioriza para una nueva iteración de diseño. 
+
+De esta manera, el ciclo **Build-Measure-Learn** (*Construir-Medir-Aprender*) se cierra formalmente en cada Sprint, asegurando que ninguna evidencia recolectada durante la experimentación se pierda y que el aprendizaje generado guíe objetivamente las decisiones de producto hacia el lanzamiento.
 
 ## 8.6. To-Be Software Platform Pre-launch
 
