@@ -3319,6 +3319,17 @@ No se implementaron historias de usuario para el backend.
 
 #### 8.3.3.6. Team Collaboration Insights
 
+Durante el desarrollo del *To-Be Sprint* y la consolidación de la entrega final (TF), el equipo mantuvo un flujo de trabajo ágil utilizando GitHub para la gestión del código y la documentación. La carga de trabajo se distribuyó estratégicamente entre la implementación técnica de los experimentos y el análisis cualitativo de los resultados. 
+
+La dinámica colaborativa se vio fortalecida por la preparación constante de resúmenes de avance, lo que facilitó la sincronización entre los desarrolladores y aseguró que todos los hallazgos técnicos, métricas y validaciones se reflejaran con precisión en la redacción del informe final.
+
+**Frontend Web Application Repository:**
+En el repositorio del Frontend, las contribuciones de los desarrolladores reflejan el esfuerzo acumulado por estructurar la interfaz, integrar las dependencias necesarias para los experimentos (como los mapas interactivos) y desplegar las vistas *To-Be*.
+![Frontend Collaboration Insights](imgs/cap8/frontInsightTF.png)
+
+**Project Report Repository:**
+En el repositorio destinado a la documentación del proyecto, se observa un pico de actividad colaborativa decisivo en la recta final (Abril - Julio 2026). Todos los integrantes del equipo intervinieron activamente mediante múltiples *commits* concurrentes para estructurar el Capítulo VIII, redactar las *Learning Cards*, registrar las auditorías de calidad y consolidar las conclusiones de las hipótesis.
+![Report Collaboration Insights](imgs/cap8/reportInsightTF.png)
 
 ### 8.3.4. To-Be Validation Interviews
 
