@@ -3363,6 +3363,7 @@ A continuación, se presentan los resultados obtenidos del formulario y las audi
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog
 
 
+
 ## 8.5. Continuous Learning
 
 ### 8.5.1. Shareback Session Artifacts: Learning Workflow
@@ -3375,7 +3376,7 @@ Para estandarizar este proceso, cada hipótesis evaluada se documentó mediante 
 
 ---
 
-#### 📋 Learning Cards
+#### Learning Cards
 
 ##### Learning Card 1 — Integración de Mapa Interactivo (US01)
 
@@ -3430,7 +3431,7 @@ Para estandarizar este proceso, cada hipótesis evaluada se documentó mediante 
 | Elemento | Descripción |
 | :--- | :--- |
 | **Hypothesis Tested** | Creemos que la implementación de filtros rápidos de estado aumentará la satisfacción sobre la navegabilidad en un 20%. |
-| **Result** | ❌ **Rechazada** (60% de aprobación, por debajo de la meta del 80%). |
+| **Result** | **Rechazada** (60% de aprobación, por debajo de la meta del 80%). |
 | **Learning** | El feedback cualitativo reveló que el problema no era la ausencia de filtros, sino su implementación visual: los botones ocupan demasiado espacio y generan confusión al combinar criterios. La hipótesis de fondo (facilitar la navegación) no fue descartada, solo la solución de UI propuesta. |
 | **Decision** | No pasa a Producción en su forma actual; regresa a fase de Experimentación. |
 | **Next Action** | Rediseñar la UI de filtros (p. ej. formato de chips colapsables o menú desplegable) y re-testear en el próximo Sprint. |
@@ -3450,6 +3451,9 @@ De esta manera, el ciclo **Build-Measure-Learn** (*Construir-Medir-Aprender*) se
 
 ### 8.6.1. About-the-Product Intro Video
 
+El About the Product se puede visualizar por medio del siguiente enlace: 
+
+- Enlace para acceder al [About the Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQB_5Ky00BZcTZsiL9G0on5HAYV6VzIkyNrCmqOW9JmR0UY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=d51AiF)
 
 # Conclusiones
 ## Conclusiones y recomendaciones.
@@ -3475,6 +3479,20 @@ Para la entrega del TB2, se incorporo el Sprint 3, lo que lleva a **SafeWork** m
 - TF:
 
 Como última entrega del proyecto, **SafeWork** logro convertirse en una aplicación robusta capaz de resolver con la problematica incial planteada. Finalizamos con el Backend y lo conectamos con el Frontend de nuestro producto, lo que nos permite a nosotros y a nuestros potenciales usuarios utilizar **SafeWork** como una herramienta de organización de accidentes durante el trabajo. En esta entrega, corregimos errores y problemas que tuvimos en la TB2 y TP, organizamos nuestras ideas y logramos desarrollar la versión mas cercana a nuestra visión original de **SafeWork**.
+
+- Conclusión de las hipotesis:
+
+La auditoría final y el análisis del proceso de *Experiment-Driven Development* (EDD) implementado en SafeWork arrojan conclusiones determinantes sobre el impacto y la viabilidad del producto. Este proceso validó la importancia crítica de basar las decisiones de diseño y funcionalidad en métricas objetivas y feedback directo de los usuarios, en lugar de depender únicamente de supuestos iniciales.
+
+A continuación, se resume el estado y la influencia de cada hipótesis evaluada en la plataforma:
+
+*   **Integración de Mapa Interactivo (Validada):** Esta hipótesis demostró que reducir la carga cognitiva al eliminar la navegación externa mejora drásticamente el tiempo percibido para la ubicación de incidentes. Su éxito refuerza la estrategia de SafeWork de centralizar herramientas operativas, por lo que esta funcionalidad se integra permanentemente a Producción.
+*   **Cambio de Estado Rápido (Validada):** Con una alta aceptación de los usuarios, se confirmó que la reducción de clics en tareas repetitivas (como actualizar el estado de un reporte) aumenta la productividad percibida. Esto influye en el diseño futuro de SafeWork, priorizando interfaces orientadas a la acción directa.
+*   **Optimización Visual y Accesibilidad (Validada):** El rediseño estructural, respaldado por las métricas de Lighthouse, no solo mejoró cualitativamente el confort visual, sino que cuantificó un aumento en la accesibilidad y el rendimiento (+18 y +19 puntos, respectivamente). Esta conclusión consolida el estándar técnico para todas las futuras vistas de la plataforma.
+*   **Gráfico de Tasa de Reclamos (Validada):** La abrumadora calificación de "Muy útil" (95%) demuestra que los perfiles SST valoran enormemente la consolidación analítica en tiempo real. Esto valida el enfoque de la plataforma hacia un Dashboard preventivo y analítico, más allá de la simple recolección de reportes.
+*   **Filtros Rápidos de Navegación (Rechazada):** Aunque el concepto de filtrado era necesario, la ejecución mediante botones grandes que ocupan espacio en pantalla no alcanzó la meta de satisfacción esperada, generando confusión. Esta hipótesis rechazada es un aprendizaje invaluable: evita llevar a producción una interfaz ineficiente y redirige el esfuerzo hacia un rediseño de UI más limpio para la siguiente iteración.
+
+En general, el ciclo de experimentación garantizó que SafeWork evolucione basándose en la eficiencia operativa y la satisfacción del usuario. Las funcionalidades validadas fortalecen el *Core* del producto, mientras que la funcionalidad rechazada previene la acumulación de "deuda UX", manteniendo la plataforma optimizada para su propósito principal: agilizar la respuesta ante incidentes laborales y mejorar la prevención de riesgos.
 
 ## **Video About-the-Team.**  
 La presente sección incluye el video del equipo que resume nuestro avance y trabajo a lo largo del proyecto.
@@ -3517,4 +3535,6 @@ Metas de los ODS pertinentes vinculados con la seguridad y la salud en el lugar 
 - Enlace para acceder al [Validation Interviews](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQAzoY-bmuwBSp9-8l_nLt5sAfa8ZZfpB4v3ezAbo7nrMi8?e=oWLtZ6)
 
 - Enlace para acceder al [About the Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQCzn1qCbGhTSJQa60lfsbzPAbwqfXy7KnTpOgtrltjeMHc)
+
+- Enlace para acceder al [About the Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQB_5Ky00BZcTZsiL9G0on5HAYV6VzIkyNrCmqOW9JmR0UY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=d51AiF)
 
