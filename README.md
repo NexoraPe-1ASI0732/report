@@ -3280,13 +3280,42 @@ Para la implementación de los experimentos, se ha estructurado un Sprint adicio
 | 5 | **US48** | Filtros Rápidos de Navegación | 2 | To Do |
 
 #### 8.3.3.2. Implemented To-Be Landing Page Evidence
-
+No se implementaron historias de usuario para el landing page.
 
 #### 8.3.3.3. Implemented To-Be Frontend-Web Application Evidence
 
+A continuación, se presentan las evidencias visuales de la aplicación web, demostrando la implementación en el entorno de pruebas de las funcionalidades experimentales (*To-Be*) diseñadas para optimizar la eficiencia operativa y la experiencia del usuario (UX).
+
+**Perfil de Usuario (Optimización Visual y Accesibilidad):**
+Evidencia de la vista de perfil, aplicando el nuevo contraste de colores, tipografías legibles y una jerarquía visual optimizada para cumplir con los estándares de Lighthouse (US03).
+![Perfil de Usuario](imgs/cap8/profileScreen.png)
+
+**Lista de Incidentes (Acciones y Filtros):**
+Despliegue de la tabla principal de incidentes. Aquí se evidencian los componentes base sobre los cuales se integran las opciones de filtrado rápido y actualización de estados para el personal de supervisión (US02, US05).
+![Lista de Incidentes](imgs/cap8/incidentsScreen.png)
+
+**Integración de Mapa Interactivo nativo:**
+Evidencia de la integración del mapa interactivo (mediante librerías como Leaflet/OSM) embebido directamente en el modal de creación y revisión de reportes. Esto elimina la necesidad de navegar hacia pestañas externas para establecer o consultar la geolocalización (US01).
+![Mapa Interactivo](imgs/cap8/mapScreen.png)
+
+**Detalles de Incidente:**
+Vista detallada estructurada en tarjetas (cards) para facilitar la rápida lectura de la información crítica del reporte, su responsable y fechas límite.
+![Detalles del Incidente](imgs/cap8/detailsScreen.png)
+
+**Panel de Notificaciones:**
+Interfaz del centro de notificaciones, rediseñada para organizar cronológicamente los eventos del sistema, permitiendo al usuario identificar rápidamente la creación y actualización de incidentes.
+![Notificaciones del Sistema](imgs/cap8/notificationsScreen.png)
+
+**Gráfico de Tasa de Reclamos (Analytics):**
+Implementación del *Dashboard* analítico que consolida la información de los incidentes en un gráfico de distribución por estados. Esta vista entrega el valor preventivo requerido por el personal SST sin necesidad de exportar datos a Excel (US04).
+![Dashboard de Analíticas](imgs/cap8/analyticsScreen.png)
+
+**Tablero de Asignaciones:**
+Evidencia visual del entorno de gestión tipo *Kanban*, que permite a los usuarios hacer un seguimiento claro de los casos clasificados como Cerrados, Asignados o En Progreso.
+![Tablero de Asignaciones](imgs/cap8/assigmentsBoardScreen.png)
 
 #### 8.3.3.5. Implemented To-Be RESTful API and/or Serverless Backend Evidence
-
+No se implementaron historias de usuario para el backend.
 
 #### 8.3.3.6. Team Collaboration Insights
 
@@ -3551,7 +3580,7 @@ En general, el ciclo de experimentación garantizó que SafeWork evolucione bas�
 ## **Video About-the-Team.**  
 La presente sección incluye el video del equipo que resume nuestro avance y trabajo a lo largo del proyecto.
 
-Enlace para acceder al [About the Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQCzn1qCbGhTSJQa60lfsbzPAbwqfXy7KnTpOgtrltjeMHc)
+Enlace para acceder al [About the Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQB5hKW4ry-MSq3Z-O5vnaDJAUps3i4DzNzFEodPi5Va4Ko?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=UM0EYT)
 
 # Bibliografía
 
@@ -3588,7 +3617,7 @@ Metas de los ODS pertinentes vinculados con la seguridad y la salud en el lugar 
 
 - Enlace para acceder al [Validation Interviews](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQAzoY-bmuwBSp9-8l_nLt5sAfa8ZZfpB4v3ezAbo7nrMi8?e=oWLtZ6)
 
-- Enlace para acceder al [About the Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQCzn1qCbGhTSJQa60lfsbzPAbwqfXy7KnTpOgtrltjeMHc)
+- Enlace para acceder al [About the Team](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQB5hKW4ry-MSq3Z-O5vnaDJAUps3i4DzNzFEodPi5Va4Ko?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=UM0EYT)
 
 - Enlace para acceder al [About the Product](https://upcedupe-my.sharepoint.com/:v:/g/personal/u202223990_upc_edu_pe/IQB_5Ky00BZcTZsiL9G0on5HAYV6VzIkyNrCmqOW9JmR0UY?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=d51AiF)
 
