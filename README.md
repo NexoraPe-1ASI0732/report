@@ -3362,6 +3362,23 @@ A continuación, se presentan los resultados obtenidos del formulario y las audi
 
 ### 8.4.2. Re-scored and Re-prioritized Question Backlog
 
+Tras analizar los resultados de los experimentos del *To-Be Sprint*, el equipo de SafeWork actualizó el backlog de preguntas. Las hipótesis validadas abrieron nuevas oportunidades de optimización, mientras que la única hipótesis rechazada (filtros en pantalla principal) generó una nueva pregunta orientada a mejorar su ejecución visual. 
+
+Para priorizar este nuevo backlog, se utilizó un sistema de puntuación del 1 al 10 evaluando cuatro criterios: **Confianza** (certeza de que la solución funcionará), **Riesgo** (complejidad técnica o de adopción), **Impacto** (beneficio para el usuario) e **Interés** (motivación del equipo/negocio). En caso de empate, se prioriza la pregunta con mayor Impacto y menor Riesgo.
+
+| Prioridad | Pregunta Lista para el Experimento | Origen / Motivación (El "Por qué") | Confianza | Riesgo | Impacto | Interés | Puntaje Total |
+| :---: | :--- | :--- | :---: | :---: | :---: | :---: | :---: |
+| **1** | ¿Qué impacto tendrá rediseñar los filtros rápidos utilizando un menú lateral desplegable en lugar de tarjetas estáticas sobre la eficiencia de navegación? | **Derivada del rechazo de US05:** Sabemos que los usuarios necesitan filtrar por estado, pero la UI anterior ocupaba mucho espacio y confundía. Es crítico resolver esta deuda de UX. | 8 | 2 | 9 | 8 | **27** |
+| **2** | ¿Cómo afectará la implementación de acciones rápidas adicionales (como "Reasignar Caso") en la lista principal sobre la productividad del personal SST? | **Derivada del éxito de US02:** Dado que reducir clics para cambiar estados fue un éxito absoluto, queremos expandir este modelo de UI a la asignación de responsables. | 8 | 3 | 8 | 7 | **26** |
+| **3** | ¿Qué efecto tendrá la incorporación de filtros temporales (mensual/anual) directamente sobre la gráfica de tasa de reclamos en la capacidad analítica del usuario? | **Derivada del éxito de US04:** Los usuarios encontraron la gráfica "Muy útil". El siguiente paso natural es permitirles segmentar esa información en el tiempo sin salir del Dashboard. | 7 | 2 | 7 | 8 | **24** |
+| **4** | ¿En qué medida la visualización de rutas óptimas hacia el incidente dentro del mapa interactivo reducirá el tiempo de respuesta del equipo interno de emergencia? | **Derivada del éxito de US01:** El mapa embebido redujo la carga cognitiva. Ahora queremos saber si agregar trazado de rutas justifica el esfuerzo técnico extra. | 6 | 5 | 7 | 6 | **24** |
+| **5** | ¿De qué manera la integración de un asistente automatizado (chatbot básico) para sugerir normativas SST afectará el tiempo de resolución de un caso? | **Exploratoria:** Nueva brecha de conocimiento. Buscamos saber si el personal SST usaría una base de conocimientos integrada para fundamentar sus acciones correctivas. | 5 | 6 | 6 | 5 | **22** |
+
+#### Análisis de la re-priorización:
+1.  **Prioridad 1 y 2:** Se centran en "ganancias rápidas" (*quick wins*) de UX. Tienen bajo riesgo técnico porque la lógica de backend ya existe (los filtros de API y las acciones de base de datos están listas); solo requieren refactorización en Angular.
+2.  **Prioridad 3:** Expande una funcionalidad que ya demostró alto valor para el negocio (Analytics), pero requiere ajustes moderados tanto en frontend como en las consultas SQL del backend.
+3.  **Prioridad 4 y 5:** Tienen un riesgo técnico mayor (consumo de APIs de enrutamiento avanzado o integración de IA/Chatbots) y una confianza media, por lo que quedan relegadas a Sprints futuros una vez que el *Core* de la aplicación esté 100% pulido en producción.
+
 
 
 ## 8.5. Continuous Learning
