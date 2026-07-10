@@ -3293,11 +3293,48 @@ Para la implementación de los experimentos, se ha estructurado un Sprint adicio
 
 ### 8.3.4. To-Be Validation Interviews
 
+Para esta fase de validación de la plataforma *To-Be*, el equipo de SafeWork optó por sustituir las entrevistas presenciales tradicionales por un **cuestionario estructurado y asíncrono** (a través de Google Forms) aplicado a una muestra de 20 usuarios (conformada por Personal SST y Trabajadores). Esta metodología permitió recopilar datos cuantitativos precisos para nuestras métricas, acompañados de espacios para *feedback* cualitativo corto.
+
 #### 8.3.4.1. Diseño de Entrevistas.
 
+El cuestionario fue diseñado como una "entrevista estructurada no moderada". Se dividió en dos secciones: una de perfilamiento demográfico/uso, y otra orientada estrictamente a validar las 5 *To-Be User Stories* experimentales mediante preguntas cerradas (escala Likert, opciones dicotómicas y de valoración).
+
+**Sección 1: Perfil Demográfico y de Uso**
+1. ¿En qué rango de edad se encuentra? *(Opciones: 20-30 años / 31-40 años / 41-50 años / 51-60 años)*
+2. ¿Con qué frecuencia utiliza plataformas de gestión laboral o reportes? *(Opciones: Diariamente / Semanalmente / Mensualmente)*
+3. ¿Cuál es su rol principal en relación con la seguridad laboral? *(Opciones: Personal SST / Trabajador / Gerencia)*
+
+**Sección 2: Validación de Funcionalidades Experimentales (To-Be)**
+4. **[US01]** ¿El mapa interactivo integrado en la plataforma le permitió ubicar el incidente de manera más rápida en comparación a hacer clic en un enlace externo? *(Opciones: Sí / No)*
+5. **[US02]** ¿Considera que los botones de acción rápida en la lista principal agilizan la gestión y actualización de los reportes? *(Opciones: Totalmente de acuerdo / De acuerdo / En desacuerdo / Totalmente en desacuerdo)*
+6. **[US03]** ¿Cómo calificaría el confort visual y la legibilidad de la nueva interfaz con el contraste de colores actualizado? *(Opciones: Excelente / Bueno / Regular / Malo)*
+7. **[US04]** ¿Qué tan útil le resulta la visualización de la gráfica de "Tasa de Reclamos" en el panel principal para la toma de decisiones preventivas? *(Opciones: Muy útil / Algo útil / Poco útil / Nada útil)*
+8. **[US05]** ¿Los botones de filtros rápidos (ej. "Críticos", "Abiertos") en la página de inicio hicieron que su búsqueda de información fuera más intuitiva? *(Opciones: Sí / No)*
+9. **[Feedback Abierto - Opcional]** Brevemente, ¿qué aspecto de las nuevas funcionalidades le resultó confuso o mejoraría? *(Campo de texto corto)*
 
 #### 8.3.4.2. Registro de Entrevistas.
 
+Dado que la validación se realizó mediante un formulario masivo (20 respuestas consolidadas), el registro individual se resume en la conformación de la muestra y una síntesis cualitativa de las respuestas obtenidas en el campo de *feedback* abierto, las cuales fueron vitales para interpretar el posterior rechazo de la hipótesis de los filtros.
+
+**Consolidado de la Muestra (20 Usuarios)**
+
+| Perfil de Usuario | Cantidad | Rango de Edad Predominante | Frecuencia de Uso Predominante |
+| :--- | :---: | :---: | :---: |
+| **Personal SST / Supervisores** | 12 | 31-40 años | Diariamente |
+| **Trabajadores Operativos** | 8 | 20-30 años | Semanalmente |
+| **Total** | **20** | - | - |
+
+**Síntesis Cualitativa del Registro de Respuestas**
+
+Al analizar los comentarios opcionales dejados por los usuarios al finalizar el cuestionario, se registraron los siguientes *insights* o patrones de comportamiento:
+
+*   **Sobre el Mapa Interactivo (US01) y Acciones Rápidas (US02):**
+    *   *Registro cualitativo:* Los usuarios del perfil "Personal SST" mencionaron repetidamente que el ahorro de tiempo es notorio. Un usuario comentó textualmente: *"No tener que abrir otra pestaña para ver dónde fue el accidente me ahorra mucho tiempo cuando tengo varios reportes acumulados"*.
+*   **Sobre el Gráfico de Reclamos (US04):**
+    *   *Registro cualitativo:* Fue la característica más elogiada por los perfiles administrativos. Mencionaron que les da un "resumen visual rápido" al iniciar su jornada, sin tener que exportar datos a Excel para generar sus propias gráficas.
+*   **Sobre los Filtros Rápidos (US05 - El principal dolor encontrado):**
+    *   *Registro cualitativo:* De las respuestas cualitativas recopiladas, la mayoría de las quejas apuntaron a la usabilidad visual de los filtros. Los usuarios indicaron: *"Los botones de filtro son muy grandes y empujan la tabla de incidentes hacia abajo"*, *"Cuando selecciono más de dos filtros me confundo de qué estoy viendo realmente"*. 
+    *   *Impacto:* Este registro fue la pieza clave que permitió al equipo comprender por qué el 40% de los encuestados votó "No" en la efectividad de los filtros (Pregunta 8), llevando al rechazo de la hipótesis en la sección de análisis.
 
 ## 8.4. Experiment Aftermath & Analysis
 
