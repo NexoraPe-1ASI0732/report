@@ -84,7 +84,7 @@ COURSE PROJECT
 | 1.8 | 14/06/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se verificaron los procesos de experimentacion |
 | 1.9 | 05/07/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se añadieron las secciones de auditoria |
 | 1.9.1 | 07/07/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se actualizaron los puntos del capítulo 8 con detalles |
-
+| 2.0 | 09/07/2026 | C. Diego, R. Daniel, V. Liam, P. Gerardo | Se finalizo con el desarrollo de SafeWork |
 
 
 ---
